@@ -1168,17 +1168,12 @@
           />
         </g>
       </g>
-      <g transform="translate(0 7)">
-        <text class="an" transform="translate(913 456)">
-          <tspan x="-84.051" y="0">03-5320-4592</tspan>
-        </text>
-        <g transform="translate(800 434)">
-          <path class="d" d="M0,0H26V26H0Z" />
-          <path
-            class="e"
-            d="M6.922,11.439a16.411,16.411,0,0,0,7.139,7.139L16.444,16.2a1.077,1.077,0,0,1,1.1-.26,12.358,12.358,0,0,0,3.867.617A1.087,1.087,0,0,1,22.5,17.636v3.781A1.087,1.087,0,0,1,21.417,22.5,18.415,18.415,0,0,1,3,4.083,1.087,1.087,0,0,1,4.083,3H7.875A1.087,1.087,0,0,1,8.958,4.083a12.307,12.307,0,0,0,.617,3.867A1.087,1.087,0,0,1,9.3,9.056Z"
-            transform="translate(0.25 0.25)"
-          />
+      <g transform="translate(0 -9)">
+        <g transform="translate(19 5)">
+          <text class="p" transform="translate(772 456)">
+            <tspan x="0" y="0">メッセージにより緊急電話</tspan>
+            <tspan x="0" y="23">番号が案内されます</tspan>
+          </text>
         </g>
       </g>
       <g transform="translate(0 -19)">

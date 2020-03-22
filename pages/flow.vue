@@ -129,13 +129,8 @@
                 <br />
                 土日祝 終日
               </dt>
-              <dd class="TelLink">
-                <a href="tel:0353204592">
-                  <img
-                    src="/flow/sp/sp_flow_tel_03@2x.png"
-                    alt="03-5320-4592"
-                  />
-                </a>
+              <dd>
+                メッセージにより緊急電話番号が案内されます
               </dd>
             </div>
           </dl>
