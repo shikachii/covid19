@@ -96,11 +96,11 @@ $z-index-map: (
   display: inline-block;
   border-radius: 4px;
   background-color: $white;
-  border: 1px solid $green-1;
-  color:$green-1;
+  border: 1px solid $purple-1;
+  color:$purple-1;
   cursor: pointer;
   &:hover {
-    background-color: $green-1;
+    background-color: $purple-1;
     color: $white;
     > i {
       color: $white !important;

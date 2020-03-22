@@ -2,7 +2,7 @@
   <v-app class="app-print">
     <div v-if="loading" class="loader">
       <img src="/logo.svg" alt="東京都" />
-      <scale-loader color="#00A040" />
+      <scale-loader color="#694e84" />
     </div>
     <v-container v-else>
       <v-row align="center" class="PrintMeta">
@@ -32,7 +32,7 @@
                 ※最新の情報はWebページをご覧ください
               </p>
               <p class="PrintMeta-Link">
-                https://stopcovid19.metro.tokyo.lg.jp/
+                https://stopcovid19.yamanashi.dev/
               </p>
             </v-card>
           </v-card>

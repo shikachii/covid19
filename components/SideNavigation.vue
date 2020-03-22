@@ -42,7 +42,11 @@
           <a href="https://twitter.com/Covid19Y" target="_blank" rel="noopener">
             <img src="/twitter.png" alt="Twitter" />
           </a>
-          <a href="https://www.facebook.com/covid19.yamanashi" target="_blank" rel="noopener">
+          <a
+            href="https://www.facebook.com/covid19.yamanashi"
+            target="_blank"
+            rel="noopener"
+          >
             <img src="/facebook.png" alt="Facebook" />
           </a>
           <a href="https://github.com/covid19-yamanashi/covid19">
@@ -76,6 +80,7 @@
     "Tokyo Metropolitan Government": "東京都",
     "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
     "The latest updates": "県内の最新感染動向",
+    "If you feel concerned about COVID-19": "新型コロナウイルス感染症が心配なときに",
     "for Citizens": "山梨県による総合情報",
     "for Families with children": "お子様をお持ちの皆様へ",
     "for Enterprises and Employees": "企業の皆様・はたらく皆様へ",
@@ -109,6 +114,12 @@ export default {
           icon: 'mdi-chart-timeline-variant',
           title: this.$t('The latest updates'),
           link: '/',
+          divider: true
+        },
+        {
+          icon: 'covid',
+          title: this.$t('If you feel concerned about COVID-19'),
+          link: '/flow',
           divider: true
         },
         {

@@ -87,7 +87,7 @@
         .j,
         .o,
         .v {
-          fill: #00a040;
+          fill: #694e84;
         }
 
         .k,
@@ -150,7 +150,7 @@
 
         .ab,
         .x {
-          stroke: #00a040;
+          stroke: #694e84;
         }
 
         .ak,
@@ -356,9 +356,9 @@
           />
         </g>
       </g>
-      <text class="b" transform="translate(622 555)">
-        <tspan x="-55" y="0">新型コロナ</tspan>
-        <tspan x="-76.67" y="25">コールセンター</tspan>
+      <text class="b" transform="translate(580 555)">
+        <tspan x="-55" y="0">新型コロナウイルス</tspan>
+        <tspan x="-76.67" y="25">感染症専用相談ダイヤル</tspan>
       </text>
       <text class="c" transform="translate(622 614)">
         <tspan x="-75.392" y="0">午前9時から午後9時</tspan>
@@ -1052,9 +1052,9 @@
           <tspan x="-89.817" y="0">PCR検査</tspan>
         </text>
         <g transform="translate(-101 1091)">
-          <text class="b" transform="translate(238 106)">
-            <tspan x="-77" y="0">東京都健康安全</tspan>
-            <tspan x="-77" y="25">研究センター等</tspan>
+          <text class="b" transform="translate(261 106)">
+            <tspan x="-77" y="0">感染症指定</tspan>
+            <tspan x="-77" y="25">医療機関等</tspan>
           </text>
         </g>
       </g>
@@ -1168,32 +1168,27 @@
           />
         </g>
       </g>
-      <g transform="translate(0 7)">
-        <text class="an" transform="translate(913 456)">
-          <tspan x="-84.051" y="0">03-5320-4592</tspan>
-        </text>
-        <g transform="translate(800 434)">
-          <path class="d" d="M0,0H26V26H0Z" />
-          <path
-            class="e"
-            d="M6.922,11.439a16.411,16.411,0,0,0,7.139,7.139L16.444,16.2a1.077,1.077,0,0,1,1.1-.26,12.358,12.358,0,0,0,3.867.617A1.087,1.087,0,0,1,22.5,17.636v3.781A1.087,1.087,0,0,1,21.417,22.5,18.415,18.415,0,0,1,3,4.083,1.087,1.087,0,0,1,4.083,3H7.875A1.087,1.087,0,0,1,8.958,4.083a12.307,12.307,0,0,0,.617,3.867A1.087,1.087,0,0,1,9.3,9.056Z"
-            transform="translate(0.25 0.25)"
-          />
+      <g transform="translate(0 -9)">
+        <g transform="translate(19 5)">
+          <text class="p" transform="translate(772 456)">
+            <tspan x="0" y="0">メッセージにより緊急電話</tspan>
+            <tspan x="0" y="23">番号が案内されます</tspan>
+          </text>
         </g>
       </g>
       <g transform="translate(0 -19)">
         <g transform="translate(19 5)">
           <a
-            xlink:href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+            xlink:href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#soudanmadoguchi"
             target="_blank"
             rel="noopener"
           >
-            <text class="c" transform="translate(803 311)" style="">
-              <tspan x="0" y="0">各保健所の電話番号は</tspan>
-              <tspan x="0" y="22">福祉保健局HPへ</tspan>
+            <text class="c" transform="translate(767 311)" style="">
+              <tspan x="0" y="0">こちらから管轄地域の保健所へ</tspan>
+              <tspan x="0" y="22">ご連絡ください</tspan>
             </text>
           </a>
-          <g transform="translate(927 318)">
+          <g transform="translate(887 318)">
             <path class="d" d="M0,0H19V19H0Z" />
             <path
               class="ao"
@@ -1203,10 +1198,10 @@
           </g>
         </g>
       </g>
-      <text class="an" transform="translate(633 679)">
-        <tspan x="-79.555" y="0">0570-550571</tspan>
+      <text class="an" transform="translate(629 679)">
+        <tspan x="-79.555" y="0">055-223-8896</tspan>
       </text>
-      <g transform="translate(520 656)">
+      <g transform="translate(516 656)">
         <path class="d" d="M0,0H26V26H0Z" />
         <path
           class="e"
