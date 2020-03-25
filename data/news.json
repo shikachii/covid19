@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/03/25",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/case3-4.pdf",
+      "text": "3月24日、2名の新型コロナウイルス感染症患者が確認されました "
+    },
+    {
       "date": "2020/03/11",
       "url": "https://www.pref.yamanashi.jp/shinchaku/kodomo-fukushi/0203/coronavirus_joseikin.html",
       "text": "「山梨県感染拡大防止のための新型コロナウイルス対策子育て家庭休業助成金」制度の創設について "
