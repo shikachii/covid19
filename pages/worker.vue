@@ -18,6 +18,13 @@ export default {
     return {
       items: [
         {
+          title: '休業や失業で、生活資金についてお悩みの皆さまへ',
+          link:
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#seikatsushikin',
+          body:
+            '生活福祉資金貸付制度では休業や失業により生活資金でお悩みの方々に向けた緊急小口資金等の特例貸付を実施しています。'
+        },
+        {
           title: '新型コロナウイルス対策休業助成金制度',
           link:
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#rosei',
