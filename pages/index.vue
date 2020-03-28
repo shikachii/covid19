@@ -63,6 +63,17 @@
           :url="''"
         />
       </v-col>
+      <v-col cols="12" md="6" class="DataCard">
+        <time-bar-chart
+          title="新型コロナ受診相談窓口相談件数"
+          :title-id="'number-of-reports-to-covid19-consultation-desk'"
+          :chart-id="'time-bar-chart-querents'"
+          :chart-data="querentsGraph"
+          :date="Data.querents.date"
+          :unit="'件'"
+          :url="''"
+        />
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -95,6 +106,8 @@ export default {
 
     // 相談件数
     const contactsGraph = formatGraph(Data.contacts.data)
+    // 帰国者・接触者電話相談センター相談件数
+    const querentsGraph = formatGraph(Data.querents.data)
     // 検査実施日別状況
     const inspectionsGraph = formatGraph(Data.inspections_summary.data)
 
@@ -124,6 +137,7 @@ export default {
       patientsTable,
       patientsGraph,
       contactsGraph,
+      querentsGraph,
       inspectionsGraph,
       inspectionsItems,
       inspectionsLabels,
