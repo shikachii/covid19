@@ -54,22 +54,22 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="新型コロナコールセンター相談件数"
-          :title-id="'number-of-reports-to-covid19-telephone-advisory-center'"
-          :chart-id="'time-bar-chart-contacts'"
-          :chart-data="contactsGraph"
-          :date="Data.contacts.date"
+          title="帰国者・接触者相談センター相談件数"
+          :title-id="'number-of-reports-to-covid19-consultation-desk'"
+          :chart-id="'time-bar-chart-querents'"
+          :chart-data="querentsGraph"
+          :date="Data.querents.date"
           :unit="'件'"
           :url="''"
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="新型コロナ受診相談窓口相談件数"
-          :title-id="'number-of-reports-to-covid19-consultation-desk'"
-          :chart-id="'time-bar-chart-querents'"
-          :chart-data="querentsGraph"
-          :date="Data.querents.date"
+          title="新型コロナコールセンター相談件数"
+          :title-id="'number-of-reports-to-covid19-telephone-advisory-center'"
+          :chart-id="'time-bar-chart-contacts'"
+          :chart-data="contactsGraph"
+          :date="Data.contacts.date"
           :unit="'件'"
           :url="''"
         />
