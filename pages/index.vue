@@ -60,7 +60,9 @@
           :chart-data="querentsGraph"
           :date="Data.querents.date"
           :unit="'件'"
-          :url="''"
+          :url="
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
+          "
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
@@ -71,7 +73,9 @@
           :chart-data="contactsGraph"
           :date="Data.contacts.date"
           :unit="'件'"
-          :url="''"
+          :url="
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
+          "
         />
       </v-col>
     </v-row>
