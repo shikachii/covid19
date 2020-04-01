@@ -61,7 +61,7 @@ export default Vue.extend({
       link: [
         {
           rel: 'canonical',
-          href: `https://stopcovid19.yamanashi.dev/${this.$route.path}`
+          href: `https://stopcovid19.yamanashi.dev${this.$route.path}`
         }
       ]
     }
