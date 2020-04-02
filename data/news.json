@@ -1,6 +1,36 @@
 {
   "newsItems": [
     {
+      "date": "2020/04/01",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200401_case8.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内8例目）"
+    },
+    {
+      "date": "2020/04/01",
+      "url": "https://youtu.be/hEF0AkGPIqE",
+      "text": "知事からのメッセージ（令和2年4月1日水曜日）"
+    },
+    {
+      "date": "2020/04/01",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200401_case7.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内7例目）"
+    },
+    {
+      "date": "2020/04/01",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200401_case6.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内6例目）"
+    },
+    {
+      "date": "2020/03/31",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200331_case5.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内5例目）"
+    },
+    {
+      "date": "2020/03/27",
+      "url": "https://youtu.be/MLrXSdtxuws",
+      "text": "知事記者会見（令和2年3月27日金曜日）"
+    },
+    {
       "date": "2020/03/26",
       "url": "https://youtu.be/83W1sk7HzXY",
       "text": "知事からのメッセージ（令和2年3月26日木曜日）"
@@ -13,7 +43,7 @@
     {
       "date": "2020/03/25",
       "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/case3-4.pdf",
-      "text": "3月24日、2名の新型コロナウイルス感染症患者が確認されました "
+      "text": "新型コロナウイルス感染症患者の発生について（県内3,4例目）"
     },
     {
       "date": "2020/03/11",
