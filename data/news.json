@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/04/02",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200402_case9.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内9例目）"
+    },
+    {
       "date": "2020/04/01",
       "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200401_case8.pdf",
       "text": "新型コロナウイルス感染症患者の発生について（県内8例目）"
