@@ -46,16 +46,23 @@ export default {
             '県では、新型コロナウイルス感染拡大の影響により売上が減少した際に活用できる経済変動対策融資を行っています。'
         },
         {
-          title: 'その他の融資',
-          link: 'https://www.pref.yamanashi.jp/shougyo/42590388393.html',
-          body: 'その他の融資についてはこちらをご覧ください。'
-        },
-        {
           title: '中小企業者等特別相談窓口',
           link:
             'https://www.pref.yamanashi.jp/shouko-kik/koronasoudanmadoguchi.html',
           body:
             '県、商工会議所、商工会などの新型コロナウイルスに関する中小企業・小規模企業の相談窓口の一覧です。'
+        },
+        {
+          title: 'バス・タクシー事業者の予防・まん延防止対策について',
+          link: 'https://www.pref.yamanashi.jp/kotsu-seisaku/koukyou.html',
+          body:
+            '公共交通事業者については乗務員の手洗い・マスクの着用、車両の消毒等、感染拡大の対策を講じています。'
+        },
+        {
+          title: '工事現場等における対応について',
+          link: 'https://www.pref.yamanashi.jp/gijutsukanri/corona.html',
+          body:
+            '公共事業の工事及び業務における新型コロナウィルス感染症の感染拡大防止に向けた対策です。'
         }
       ]
     }
