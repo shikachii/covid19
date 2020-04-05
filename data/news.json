@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/04/04",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/documents/200404_case10-11.pdf",
+      "text": "新型コロナウイルス感染症患者の発生について（県内10,11例目）"
+    },
+    {
       "date": "2020/04/02",
       "url": "https://www.pref.yamanashi.jp/shokuhin-st/anzen/korona_huhyo.html",
       "text": "新型コロナウイルス風評被害等相談窓口を開設しました"
