@@ -67,6 +67,11 @@ const config: Configuration = {
         hid: 'twitter:image',
         name: 'twitter:image',
         content: 'https://stopcovid19.yamanashi.dev/ogp.jpg'
+      },
+      {
+        hid: 'author',
+        name: 'author',
+        content: 'stopcovid19.yamanashi.dev'
       }
     ],
     link: [
