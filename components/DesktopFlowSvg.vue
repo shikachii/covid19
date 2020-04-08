@@ -1179,7 +1179,7 @@
       <g transform="translate(0 -19)">
         <g transform="translate(19 5)">
           <a
-            xlink:href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#soudanmadoguchi"
+            xlink:href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
             target="_blank"
             rel="noopener"
           >
