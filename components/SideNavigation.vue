@@ -17,11 +17,7 @@
         </h1>
       </nuxt-link>
     </div>
-    <select v-model="currentLocaleCode" @change="handleChangeLanguage" style="padding:2px 20px;">
-      <option v-for="locale in $root.$i18n.locales" :key="locale.code" :value="locale.code" :title="locale.code">
-      {{ locale.name }}
-      </option>
-    </select>
+    <LanguageSelector />
     <v-divider class="SideNavigation-HeadingDivider" />
     <div class="sp-none" :class="{ open: isNaviOpen }">
       <v-icon
@@ -76,20 +72,17 @@
 
 <script>
 import ListItem from '@/components/ListItem'
+import LanguageSelector from '@/components/LanguageSelector'
 
 export default {
   components: {
-    ListItem
+    ListItem,
+    LanguageSelector
   },
   props: {
     isNaviOpen: {
       type: Boolean,
       required: true
-    }
-  },
-  data() {
-    return {
-      currentLocaleCode: this.$root.$i18n.locale
     }
   },
   computed: {
@@ -164,9 +157,6 @@ export default {
     },
     closeNavi() {
       this.$emit('closeNavi')
-    },
-    handleChangeLanguage() {
-      this.$root.$i18n.setLocale(this.currentLocaleCode)
     }
   }
 }
