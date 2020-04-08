@@ -17,6 +17,11 @@
         </h1>
       </nuxt-link>
     </div>
+    <select v-model="currentLocaleCode" @change="handleChangeLanguage" style="padding:2px 20px;">
+      <option v-for="locale in $root.$i18n.locales" :key="locale.code" :value="locale.code" :title="locale.code">
+      {{ locale.name }}
+      </option>
+    </select>
     <v-divider class="SideNavigation-HeadingDivider" />
     <div class="sp-none" :class="{ open: isNaviOpen }">
       <v-icon
@@ -60,39 +65,14 @@
             target="_blank"
             href="http://creativecommons.org/licenses/by/4.0/"
           >
-            Creative Commons Attribution 4.0 International License </a
-          ><br />
+            Creative Commons Attribution 4.0 International License
+          </a><br />
           © 2020 stopcovid19.yamanashi.dev
         </small>
       </div>
     </div>
   </div>
 </template>
-
-<i18n>
-{
-  "ja": {
-    "Navi Open": "サイドメニュー項目を開く",
-    "Navi Close": "サイドメニュー項目を閉じる",
-    "Yamanashi": "山梨県",
-    "COVID-19": "新型コロナウイルス感染症",
-    "Measures site": "対策サイト",
-    "Tokyo Metropolitan Government": "東京都",
-    "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
-    "The latest updates": "県内の最新感染動向",
-    "If you feel concerned about COVID-19": "新型コロナウイルス感染症が心配なときに",
-    "for Citizens": "山梨県による総合情報",
-    "for Families with children": "お子様をお持ちの皆様へ",
-    "for Enterprises and Employees": "企業の皆様・はたらく皆様へ",
-    "for Lodging business": "宿泊事業者の皆様へ",
-    "Information from Municipalities": "各市町村からの情報",
-    "Message from Governor Nagasaki": "知事からのメッセージ",
-    "Government official website": "山梨県公式ホームページ",
-    "Government official Twitter": "山梨県新型コロナウイルス対策 Twitter",
-    "About us": "当サイトについて"
-  }
-}
-</i18n>
 
 <script>
 import ListItem from '@/components/ListItem'
@@ -105,6 +85,11 @@ export default {
     isNaviOpen: {
       type: Boolean,
       required: true
+    }
+  },
+  data() {
+    return {
+      currentLocaleCode: this.$root.$i18n.locale
     }
   },
   computed: {
@@ -179,6 +164,9 @@ export default {
     },
     closeNavi() {
       this.$emit('closeNavi')
+    },
+    handleChangeLanguage() {
+      this.$root.$i18n.setLocale(this.currentLocaleCode)
     }
   }
 }
