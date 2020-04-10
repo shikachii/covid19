@@ -1,74 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/04",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内10,11例目）"
+      "date": "2020/04/09",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html#Patients",
+      "text": "令和2年4月9日報道資料（27例目）"
+    },
+     {
+      "date": "2020/04/07",
+      "url": "https://youtu.be/pQ6o4gILVQg",
+      "text": "県民の皆様への知事からのメッセージ（令和2年4月7日）"
     },
     {
       "date": "2020/04/02",
       "url": "https://www.pref.yamanashi.jp/shokuhin-st/anzen/korona_huhyo.html",
       "text": "新型コロナウイルス風評被害等相談窓口を開設しました"
-    },
-    {
-      "date": "2020/04/02",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内9例目）"
-    },
-    {
-      "date": "2020/04/01",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内8例目）"
-    },
-    {
-      "date": "2020/04/01",
-      "url": "https://youtu.be/hEF0AkGPIqE",
-      "text": "知事からのメッセージ（令和2年4月1日水曜日）"
-    },
-    {
-      "date": "2020/04/01",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内7例目）"
-    },
-    {
-      "date": "2020/04/01",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内6例目）"
-    },
-    {
-      "date": "2020/03/31",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内5例目）"
-    },
-    {
-      "date": "2020/03/27",
-      "url": "https://youtu.be/MLrXSdtxuws",
-      "text": "知事記者会見（令和2年3月27日金曜日）"
-    },
-    {
-      "date": "2020/03/26",
-      "url": "https://youtu.be/83W1sk7HzXY",
-      "text": "知事からのメッセージ（令和2年3月26日木曜日）"
-    },
-    {
-      "date": "2020/03/25",
-      "url": "https://youtu.be/DLHYCjrjyyI",
-      "text": "知事臨時記者会見（令和2年3月25日水曜日）"
-    },
-    {
-      "date": "2020/03/25",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#hasseijoukyou",
-      "text": "新型コロナウイルス感染症患者の発生について（県内3,4例目）"
-    },
-    {
-      "date": "2020/03/11",
-      "url": "https://www.pref.yamanashi.jp/shinchaku/kodomo-fukushi/0203/coronavirus_joseikin.html",
-      "text": "「山梨県感染拡大防止のための新型コロナウイルス対策子育て家庭休業助成金」制度の創設について "
-    },
-    {
-      "date": "2020/03/11",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#sougoutaisakuhonbu",
-      "text": "山梨県新型コロナウイルス感染症関係総合対策本部の開催状況"
     }
   ]
 }
