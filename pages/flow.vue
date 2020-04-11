@@ -244,7 +244,7 @@ export default {
       margin-left: 8px;
       @include lessThan($medium) {
         @include font-size(20);
-        margin-right: .5em;
+        margin-right: 0.5em;
         line-height: 1.35;
       }
     }

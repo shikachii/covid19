@@ -125,19 +125,18 @@ export default {
     }
 
     const data = {
-      Data,
+      Data
     }
     return data
   },
   methods: {
     getTranslatedWording(value) {
-      if(value === '―' || value === '-' || value == null) {
+      if (value === '―' || value === '-' || value == null) {
         return value
       }
 
       return this.$t(value)
     }
   }
-
 }
 </script>

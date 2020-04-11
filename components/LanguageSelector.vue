@@ -1,11 +1,10 @@
 <template>
   <div class="LanguageSelector">
-    <div class="LanguageSelector-Background">
-    </div>
+    <div class="LanguageSelector-Background" />
     <select
       id="LanguageSelector"
-      class="LanguageSelector-Menu"
       v-model="currentLocaleCode"
+      class="LanguageSelector-Menu"
       @change="handleChangeLanguage"
     >
       <option
@@ -28,8 +27,7 @@ type LocaleCode = {
 }
 
 export default Vue.extend({
-  components: {
-  },
+  components: {},
   data(): LocaleCode {
     return {
       currentLocaleCode: this.$root.$i18n.locale
@@ -41,7 +39,6 @@ export default Vue.extend({
     }
   }
 })
-
 </script>
 
 <style lang="scss" scoped>

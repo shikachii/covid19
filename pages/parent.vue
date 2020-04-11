@@ -29,11 +29,13 @@ export default {
         },
         {
           title: '3 学校の臨時休校について',
-          body: '〇  各市町村ごとの対応状況、学童保育実施についてお知らせしているページです。<br /><a href="https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html</a>'
+          body:
+            '〇  各市町村ごとの対応状況、学童保育実施についてお知らせしているページです。<br /><a href="https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html</a>'
         },
         {
           title: '4 子育て家庭休業助成金制度について',
-          body: '〇  子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。<br /><a href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei</a>'
+          body:
+            '〇  子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。<br /><a href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei</a>'
         },
         {
           title: '5 その他',

@@ -25,7 +25,9 @@
         <slot />
       </div>
       <v-footer class="DataView-Footer">
-        <time :datetime="date">{{ $t('Latest update:')}} {{ date }} {{ $t('更新') }}</time>
+        <time :datetime="date">
+          {{ $t('Latest update:') }} {{ date }} {{ $t('更新') }}
+        </time>
         <a
           v-if="url"
           class="OpenDataLink"

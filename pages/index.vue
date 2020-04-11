@@ -132,7 +132,11 @@ export default {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: this.$t('Cumulative total as of') + " " + patientsGraph[patientsGraph.length - 1].label + this.$t('の累計'),
+      sText:
+        this.$t('Cumulative total as of') +
+        ' ' +
+        patientsGraph[patientsGraph.length - 1].label +
+        this.$t('の累計'),
       unit: this.$t('人')
     }
 
