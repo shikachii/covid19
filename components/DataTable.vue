@@ -14,7 +14,7 @@
       class="cardTable"
     />
     <div class="note">
-      ※退院には、死亡退院を含む
+      {{ $t('※退院には、死亡退院を含む') }}
     </div>
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
@@ -75,6 +75,7 @@
 <script>
 import DataView from '@/components/DataView.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
+import Data from '@/data/data.json'
 
 export default {
   components: { DataView, DataViewBasicInfoPanel },
@@ -105,6 +106,38 @@ export default {
       required: false,
       default: ''
     }
+  },
+  data() {
+    for (const header of this.chartData.headers) {
+      header.text = this.$t(header.text)
+    }
+    for (const row of this.chartData.datasets) {
+      row['居住地'] = this.getTranslatedWording(row['居住地'])
+      row['性別'] = this.getTranslatedWording(row['性別'])
+      row['退院'] = this.getTranslatedWording(row['退院'])
+
+      if (row['年代'].substr(-1, 1) === '代') {
+        const age = row['年代'].substring(0, 2)
+        row['年代'] = this.$t('{age}代', { age })
+      } else {
+        row['年代'] = this.$t(row['年代'])
+      }
+    }
+
+    const data = {
+      Data,
+    }
+    return data
+  },
+  methods: {
+    getTranslatedWording(value) {
+      if(value === '―' || value === '-' || value == null) {
+        return value
+      }
+
+      return this.$t(value)
+    }
   }
+
 }
 </script>

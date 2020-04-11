@@ -9,18 +9,18 @@
     <static-info
       class="mb-4"
       :url="'/flow'"
-      :text="'自分や家族の症状に不安や心配があればまずは電話相談をどうぞ'"
-      :btn-text="'相談の手順を見る'"
+      :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
+      :btn-text="$t('相談の手順を見る')"
     />
     <v-row class="DataBlock">
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="陽性患者数"
+          :title="$t('陽性患者数')"
           :title-id="'number-of-confirmed-cases'"
           :chart-id="'time-bar-chart-patients'"
           :chart-data="patientsGraph"
           :date="Data.patients.date"
-          :unit="'人'"
+          :unit="$t('人')"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -28,7 +28,7 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <data-table
-          :title="'陽性患者の属性'"
+          :title="$t('陽性患者の属性')"
           :title-id="'attributes-of-confirmed-cases'"
           :chart-data="patientsTable"
           :chart-option="{}"
@@ -41,12 +41,12 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="県内の疑似症例の検査状況"
+          :title="$t('県内の疑似症例の検査状況')"
           :title-id="'number-of-tested'"
           :chart-id="'time-stacked-bar-chart-inspections'"
           :chart-data="inspectionsGraph"
           :date="Data.inspections_summary.date"
-          :unit="'件'"
+          :unit="$t('件')"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -54,12 +54,12 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="帰国者・接触者相談センター相談件数"
+          :title="$t('帰国者・接触者相談センター相談件数')"
           :title-id="'number-of-reports-to-covid19-consultation-desk'"
           :chart-id="'time-bar-chart-querents'"
           :chart-data="querentsGraph"
           :date="Data.querents.date"
-          :unit="'件'"
+          :unit="$t('件')"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -67,12 +67,12 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="新型コロナウイルス感染症専用相談ダイヤル相談件数"
+          :title="$t('新型コロナウイルス感染症専用相談ダイヤル相談件数')"
           :title-id="'number-of-reports-to-covid19-telephone-advisory-center'"
           :chart-id="'time-bar-chart-contacts'"
           :chart-data="contactsGraph"
           :date="Data.contacts.date"
-          :unit="'件'"
+          :unit="$t('件')"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -132,8 +132,8 @@ export default {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: patientsGraph[patientsGraph.length - 1].label + 'の累計',
-      unit: '人'
+      sText: this.$t('Cumulative total as of') + " " + patientsGraph[patientsGraph.length - 1].label + this.$t('の累計'),
+      unit: this.$t('人')
     }
 
     const data = {
@@ -149,7 +149,7 @@ export default {
       sumInfoOfPatients,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: '県内の最新感染動向',
+        title: this.$t('県内の最新感染動向'),
         date: Data.lastUpdate
       },
       newsItems: News.newsItems
@@ -158,7 +158,7 @@ export default {
   },
   head() {
     return {
-      title: '県内の最新感染動向'
+      title: this.$t('県内の最新感染動向')
     }
   }
 }

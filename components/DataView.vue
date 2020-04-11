@@ -25,7 +25,7 @@
         <slot />
       </div>
       <v-footer class="DataView-Footer">
-        <time :datetime="date">{{ date }} 更新</time>
+        <time :datetime="date">{{ $t('Latest update:')}} {{ date }} {{ $t('更新') }}</time>
         <a
           v-if="url"
           class="OpenDataLink"
@@ -33,7 +33,7 @@
           target="_blank"
           rel="noopener"
         >
-          出典: 山梨県ウェブサイト
+          {{ $t('出典: 山梨県ウェブサイト') }}
           <v-icon class="ExternalLinkIcon" size="15">
             mdi-open-in-new
           </v-icon>
