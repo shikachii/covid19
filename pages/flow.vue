@@ -110,7 +110,7 @@
               <dd>
                 <a
                   class="Link"
-                  href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#soudanmadoguchi"
+                  href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
                   target="_blank"
                   rel="noopener"
                 >
@@ -195,7 +195,7 @@
         </div>
       </div>
       <a
-        href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#soudanmadoguchi"
+        href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
         target="_blank"
         rel="noopener"
         class="Flow-Card-Button"
@@ -244,7 +244,7 @@ export default {
       margin-left: 8px;
       @include lessThan($medium) {
         @include font-size(20);
-        margin-right: .5em;
+        margin-right: 0.5em;
         line-height: 1.35;
       }
     }
