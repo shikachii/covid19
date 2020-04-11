@@ -17,8 +17,6 @@
         </h1>
       </nuxt-link>
     </div>
-    <LanguageSelector />
-    <v-divider class="SideNavigation-HeadingDivider" />
     <div class="sp-none" :class="{ open: isNaviOpen }">
       <v-icon
         class="SideNavigation-ListContainerIcon pc-none"
@@ -27,6 +25,8 @@
       >
         mdi-close
       </v-icon>
+      <LanguageSelector />
+      <v-divider class="SideNavigation-HeadingDivider" />
       <v-list :flat="true">
         <v-container
           v-for="(item, i) in items"
