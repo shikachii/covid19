@@ -20,27 +20,27 @@ export default {
         {
           title: '休業や失業で、生活資金についてお悩みの皆さまへ',
           link:
-            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#seikatsushikin',
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person',
           body:
             '生活福祉資金貸付制度では休業や失業により生活資金でお悩みの方々に向けた緊急小口資金等の特例貸付を実施しています。'
         },
         {
           title: '新型コロナウイルス対策休業助成金制度',
           link:
-            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#rosei',
+            'https://www.pref.yamanashi.jp/rosei-koy/novel_coronavirus_joseikin.html',
           body:
             'リンク先掲載の助成対象者に対して、休業した日、一人につき一日4,000円が助成されます。令和2年3月31日までの申請が必要です。'
         },
         {
           title: '子育て家庭休業助成金制度',
-          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei',
+          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person',
           body:
             '子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。'
         },
         {
           title: '経済変動対策融資',
           link:
-            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#yuushijouhou',
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#business',
           body:
             '県では、新型コロナウイルス感染拡大の影響により売上が減少した際に活用できる経済変動対策融資を行っています。'
         },
