@@ -98,7 +98,7 @@ export default {
   },
   head() {
     return {
-      title: '各市町村からの情報'
+      title: this.$t('各市町村からの情報')
     }
   }
 }
