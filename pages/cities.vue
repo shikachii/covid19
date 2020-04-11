@@ -90,8 +90,9 @@ export default {
             'https://www.town.fujikawa.yamanashi.jp/life/health/kannsennshou.html'
         },
         {
-          body:
-            this.$t('その他の市町村は各自治体ウェブサイトのニュース欄などをご覧ください。')
+          body: this.$t(
+            'その他の市町村は各自治体ウェブサイトのニュース欄などをご覧ください。'
+          )
         }
       ]
     }

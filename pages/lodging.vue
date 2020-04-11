@@ -1,7 +1,7 @@
 <template>
   <div class="Lodging">
     <h2 class="Lodging-Heading">
-      宿泊事業者の皆さまへ
+      {{ $t('宿泊事業者の皆さまへ') }}
     </h2>
     <div v-for="(item, i) in items" :key="i">
       <TextCard :title="item.title" :link="item.link" :body="item.body" />
@@ -18,25 +18,29 @@ export default {
     return {
       items: [
         {
-          title: '宿泊施設における新型コロナウイルス感染症への対応について',
+          title: this.$t(
+            '宿泊施設における新型コロナウイルス感染症への対応について'
+          ),
           link:
             'https://www.pref.yamanashi.jp/eisei-ykm/20200212ryokan_corona.html',
-          body:
+          body: this.$t(
             '山梨県内の宿泊施設における新型コロナウイルス感染症への対応については下記をご覧ください。'
+          )
         },
         {
-          title: '笛吹市：宿泊料金割引事業',
+          title: this.$t('笛吹市：宿泊料金割引事業'),
           link:
             'https://www.city.fuefuki.yamanashi.jp/kanko/sangyo/kanko/waribikijigyou.html',
-          body:
+          body: this.$t(
             '笛吹市では令和2年4月1日より市内の旅館・ホテルの宿泊料金の割引事業を実施します。'
+          )
         }
       ]
     }
   },
   head() {
     return {
-      title: '宿泊事業者の皆さまへ'
+      title: this.$t('宿泊事業者の皆さまへ')
     }
   }
 }
