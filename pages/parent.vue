@@ -29,15 +29,15 @@ export default {
         },
         {
           title: '3 学校の臨時休校について',
-          body: '〇  各市町村ごとの対応状況、学童保育実施についてお知らせしているページです。<br /><a href="https://www.pref.yamanashi.jp/kinkyu/1402hombukaigi_3/kyouiku.html" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html</a>'
+          body: '〇  自治体により異なるため、詳細は各学校からのお知らせ等をご確認ください。'
         },
         {
           title: '4 子育て家庭休業助成金制度について',
           body: '〇  子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。<br /><a href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person" target="_blank" rel="noopener">https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei</a>'
         },
         {
-          title: '5 その他',
-          body: '〇  詳細は、各学校からのお知らせ等をご確認ください。'
+          title: '5 子供の居場所づくり等に関する取り組みについて',
+          body: '〇  山梨県教育委員会による取り組みの紹介です。<br /><a href="https://www.pref.yamanashi.jp/kyouikusom/20200227.html" target="_blank" rel="noopener">子供の居場所づくり等に関する取り組みについて</a>'
         }
       ]
     }
