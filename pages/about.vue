@@ -181,12 +181,13 @@
 
 <script lang="ts">
 import TextCard from '@/components/TextCard.vue'
+import { MetaInfo } from 'vue-meta'
 
 export default {
   components: {
     TextCard
   },
-  head() {
+  head(): MetaInfo {
     return {
       title: this.$t('当サイトについて') as string
     }

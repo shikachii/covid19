@@ -26,7 +26,7 @@
       </div>
       <v-footer class="DataView-Footer">
         <time :datetime="date">
-          {{ $t('Latest update:') }} {{ date }} {{ $t('更新') }}
+          {{ $t('{date} 更新', { date }) }}
         </time>
         <a
           v-if="url"

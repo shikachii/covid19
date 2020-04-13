@@ -4,12 +4,14 @@
       {{ $t('各市町村からの情報') }}
     </h2>
     <div v-for="(item, i) in items" :key="i">
-      <TextCard :title="item.title" :link="item.link" :body="item.body" />
+      <TextCard :title="$t(item.title)" :link="item.link" :body="$t(item.body)" />
     </div>
   </div>
 </template>
 <script lang="ts">
 import TextCard from '@/components/TextCard.vue'
+import { MetaInfo } from 'vue-meta'
+
 export default {
   components: {
     TextCard
@@ -18,88 +20,87 @@ export default {
     return {
       items: [
         {
-          title: this.$t('甲府市'),
+          title: '甲府市',
           link: 'https://www.city.kofu.yamanashi.jp/koho/korona.html'
         },
         {
-          title: this.$t('富士吉田市'),
+          title: '富士吉田市',
           link: 'https://www.city.fujiyoshida.yamanashi.jp/info/2131'
         },
         {
-          title: this.$t('都留市'),
+          title: '都留市',
           link: 'https://www.city.tsuru.yamanashi.jp/shimin/10705.html'
         },
         {
-          title: this.$t('山梨市'),
+          title: '山梨市',
           link:
             'http://www.city.yamanashi.yamanashi.jp/citizen/docs/korona_COVID-19.html'
         },
         {
-          title: this.$t('大月市'),
+          title: '大月市',
           link:
             'http://www.city.otsuki.yamanashi.jp/gyoumu/01hisyokoho/shingata-corona-virus_public_facility.html'
         },
         {
-          title: this.$t('韮崎市'),
+          title: '韮崎市',
           link: 'http://www.city.nirasaki.lg.jp/docs/2014012300025/'
         },
         {
-          title: this.$t('南アルプス市'),
+          title: '南アルプス市',
           link: 'https://www.city.minami-alps.yamanashi.jp/docs/kansensyo.html'
         },
         {
-          title: this.$t('北杜市'),
+          title: '北杜市',
           link: 'https://www.city.hokuto.yamanashi.jp/docs/11498.html'
         },
         {
-          title: this.$t('甲斐市'),
+          title: '甲斐市',
           link:
             'https://www.city.kai.yamanashi.jp/soshikinogoannai/kenkozoshinka/kenkokikakugakari/1_1/kansennsyo/index.html'
         },
         {
-          title: this.$t('笛吹市'),
+          title: '笛吹市',
           link:
             'https://www.city.fuefuki.yamanashi.jp/kenko/kenkoiryo/shinngatakoronaindex.html'
         },
         {
-          title: this.$t('上野原市'),
+          title: '上野原市',
           link: 'https://www.city.uenohara.yamanashi.jp/gyosei/docs/4318.html'
         },
         {
-          title: this.$t('甲州市'),
+          title: '甲州市',
           link:
             'https://www.city.koshu.yamanashi.jp/kenkou_fukushi_kyouiku/kenkou/detail/%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E6%84%9F%E6%9F%93%E7%97%87%E6%83%85%E5%A0%B1'
         },
         {
-          title: this.$t('中央市'),
+          title: '中央市',
           link: 'https://www.city.chuo.yamanashi.jp/kinkyu/7791.html'
         },
         {
-          title: this.$t('身延町'),
+          title: '身延町',
           link:
             'https://www.town.minobu.lg.jp/kenko/hoken/20170727-fukushi-01.html'
         },
         {
-          title: this.$t('南部町'),
+          title: '南部町',
           link:
             'https://www.town.nanbu.yamanashi.jp/kakuka/COVID-19/news/fukushi.html'
         },
         {
-          title: this.$t('富士川町'),
+          title: '富士川町',
           link:
             'https://www.town.fujikawa.yamanashi.jp/life/health/kannsennshou.html'
         },
         {
-          body: this.$t(
+          body:
             'その他の市町村は各自治体ウェブサイトのニュース欄などをご覧ください。'
-          )
         }
       ]
     }
   },
-  head() {
+  head(): MetaInfo {
     return {
-      title: this.$t('各市町村からの情報')
+      title: this.$t('各市町村からの情報') as string
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="MainPage">
     <page-header
       :icon="headerItem.icon"
-      :title="headerItem.title"
+      :title="$t(headerItem.title)"
       :date="headerItem.date"
     />
     <whats-new class="mb-4" :items="newsItems" />
@@ -93,6 +93,7 @@ import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 // import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import News from '@/data/news.json'
+import { MetaInfo } from 'vue-meta'
 
 export default {
   components: {
@@ -133,11 +134,9 @@ export default {
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
       sText:
-        this.$t('Cumulative total as of') +
-        ' ' +
-        patientsGraph[patientsGraph.length - 1].label +
-        this.$t('の累計'),
-      unit: this.$t('人')
+        'の累計',
+      date: patientsGraph[patientsGraph.length-1].label,
+      unit: '人'
     }
 
     const data = {
@@ -153,7 +152,7 @@ export default {
       sumInfoOfPatients,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('県内の最新感染動向'),
+        title: '県内の最新感染動向',
         date: Data.lastUpdate
       },
       newsItems: News.newsItems

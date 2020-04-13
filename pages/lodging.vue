@@ -4,12 +4,14 @@
       {{ $t('宿泊事業者の皆さまへ') }}
     </h2>
     <div v-for="(item, i) in items" :key="i">
-      <TextCard :title="item.title" :link="item.link" :body="item.body" />
+      <TextCard :title="$t(item.title)" :link="item.link" :body="$t(item.body)" />
     </div>
   </div>
 </template>
 <script lang="ts">
 import TextCard from '@/components/TextCard.vue'
+import { MetaInfo } from 'vue-meta'
+
 export default {
   components: {
     TextCard
@@ -18,29 +20,27 @@ export default {
     return {
       items: [
         {
-          title: this.$t(
+          title:
             '宿泊施設における新型コロナウイルス感染症への対応について'
-          ),
+          ,
           link:
             'https://www.pref.yamanashi.jp/eisei-ykm/20200212ryokan_corona.html',
-          body: this.$t(
+          body:
             '山梨県内の宿泊施設における新型コロナウイルス感染症への対応については下記をご覧ください。'
-          )
         },
         {
-          title: this.$t('笛吹市：宿泊料金割引事業'),
+          title: '笛吹市：宿泊料金割引事業',
           link:
             'https://www.city.fuefuki.yamanashi.jp/kanko/sangyo/kanko/waribikijigyou.html',
-          body: this.$t(
+          body:
             '笛吹市では令和2年4月1日より市内の旅館・ホテルの宿泊料金の割引事業を実施します。'
-          )
         }
       ]
     }
   },
-  head() {
+  head(): MetaInfo {
     return {
-      title: this.$t('宿泊事業者の皆さまへ')
+      title: this.$t('宿泊事業者の皆さまへ') as string
     }
   }
 }
