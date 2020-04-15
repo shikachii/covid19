@@ -119,7 +119,7 @@ export default {
     displayInfo() {
       return {
         lText: this.info.lText,
-        sText: this.$t('{date}'+this.info.sText, { date: this.info.date }),
+        sText: this.$t('{date}' + this.info.sText, { date: this.info.date }),
         unit: this.$t(this.info.unit)
       }
     },

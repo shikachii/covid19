@@ -82,7 +82,8 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
@@ -93,7 +94,6 @@ import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 // import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import News from '@/data/news.json'
-import { MetaInfo } from 'vue-meta'
 
 export default {
   components: {
@@ -133,9 +133,8 @@ export default {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText:
-        'の累計',
-      date: patientsGraph[patientsGraph.length-1].label,
+      sText: 'の累計',
+      date: patientsGraph[patientsGraph.length - 1].label,
       unit: '人'
     }
 
@@ -159,9 +158,9 @@ export default {
     }
     return data
   },
-  head() {
+  head(): MetaInfo {
     return {
-      title: this.$t('県内の最新感染動向')
+      title: this.$t('県内の最新感染動向') as string
     }
   }
 }

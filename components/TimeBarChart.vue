@@ -197,29 +197,33 @@ export default {
                 fontStyle: 'bold',
                 gridLines: {
                   display: true
-                },
-                callback: label => {
-                  const monthStringArry = [
-                    'Jan',
-                    'Feb',
-                    'Mar',
-                    'Apr',
-                    'May',
-                    'Jun',
-                    'Jul',
-                    'Aug',
-                    'Sep',
-                    'Oct',
-                    'Nov',
-                    'Dec'
-                  ]
-                  const month = monthStringArry.indexOf(label.split(' ')[0]) + 1
-                  return month + '月'
                 }
+                //                callback: label => {
+                //                  const monthStringArry = [
+                //                    'Jan',
+                //                    'Feb',
+                //                    'Mar',
+                //                    'Apr',
+                //                    'May',
+                //                    'Jun',
+                //                    'Jul',
+                //                    'Aug',
+                //                    'Sep',
+                //                    'Oct',
+                //                    'Nov',
+                //                    'Dec'
+                //                  ]
+                //                  const month = monthStringArry.indexOf(label.split(' ')[0]) + 1
+                //                  return month + '月'
+                //                }
               },
               type: 'time',
               time: {
-                unit: 'month'
+                unit: 'month',
+                parser: 'M/D',
+                displayFormats: {
+                  month: 'MMM'
+                }
               }
             }
           ],

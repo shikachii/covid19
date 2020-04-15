@@ -4,13 +4,17 @@
       {{ $t('各市町村からの情報') }}
     </h2>
     <div v-for="(item, i) in items" :key="i">
-      <TextCard :title="$t(item.title)" :link="item.link" :body="$t(item.body)" />
+      <TextCard
+        :title="$t(item.title)"
+        :link="item.link"
+        :body="$t(item.body)"
+      />
     </div>
   </div>
 </template>
 <script lang="ts">
-import TextCard from '@/components/TextCard.vue'
 import { MetaInfo } from 'vue-meta'
+import TextCard from '@/components/TextCard.vue'
 
 export default {
   components: {

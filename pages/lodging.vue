@@ -4,13 +4,17 @@
       {{ $t('宿泊事業者の皆さまへ') }}
     </h2>
     <div v-for="(item, i) in items" :key="i">
-      <TextCard :title="$t(item.title)" :link="item.link" :body="$t(item.body)" />
+      <TextCard
+        :title="$t(item.title)"
+        :link="item.link"
+        :body="$t(item.body)"
+      />
     </div>
   </div>
 </template>
 <script lang="ts">
-import TextCard from '@/components/TextCard.vue'
 import { MetaInfo } from 'vue-meta'
+import TextCard from '@/components/TextCard.vue'
 
 export default {
   components: {
@@ -20,9 +24,7 @@ export default {
     return {
       items: [
         {
-          title:
-            '宿泊施設における新型コロナウイルス感染症への対応について'
-          ,
+          title: '宿泊施設における新型コロナウイルス感染症への対応について',
           link:
             'https://www.pref.yamanashi.jp/eisei-ykm/20200212ryokan_corona.html',
           body:

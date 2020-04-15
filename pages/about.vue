@@ -155,7 +155,8 @@
         href="https://stopcovid19.metro.tokyo.lg.jp/"
         target="_blank"
         rel="noopener"
-        >{{ $t('東京都 新型コロナウイルス感染症対策サイト') }}
+      >
+        {{ $t('東京都 新型コロナウイルス感染症対策サイト') }}
       </a>
       {{ $t('」で使われているものをMITライセンスの元で再使用しています。') }}
       {{ $t('このソースコードは誰でも自由に利用することができます。') }}
@@ -164,7 +165,8 @@
         href="https://github.com/covid19-yamanashi/covid19"
         target="_blank"
         rel="noopener"
-        >{{ $t('GitHub リポジトリ') }}
+      >
+        {{ $t('GitHub リポジトリ') }}
       </a>
       {{ $t('をご確認ください。') }}
     </TextCard>
@@ -172,16 +174,16 @@
     <TextCard :title="$t('お問い合わせ先')">
       {{ $t('stopcovid19.yamanashi.devチーム') }}<br />
       Twitter
-      <a href="https://twitter.com/Covid19Y" target="_blank" rel="noopener"
-        >@Covid19Y
+      <a href="https://twitter.com/Covid19Y" target="_blank" rel="noopener">
+        @Covid19Y
       </a>
     </TextCard>
   </div>
 </template>
 
 <script lang="ts">
-import TextCard from '@/components/TextCard.vue'
 import { MetaInfo } from 'vue-meta'
+import TextCard from '@/components/TextCard.vue'
 
 export default {
   components: {

@@ -39,7 +39,8 @@ export default {
         },
         {
           title: '5 子供の居場所づくり等に関する取り組みについて',
-          body: '〇  山梨県教育委員会による取り組みの紹介です。<br /><a href="https://www.pref.yamanashi.jp/kyouikusom/20200227.html" target="_blank" rel="noopener">子供の居場所づくり等に関する取り組みについて</a>'
+          body:
+            '〇  山梨県教育委員会による取り組みの紹介です。<br /><a href="https://www.pref.yamanashi.jp/kyouikusom/20200227.html" target="_blank" rel="noopener">子供の居場所づくり等に関する取り組みについて</a>'
         }
       ]
     }
