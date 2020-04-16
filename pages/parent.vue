@@ -15,21 +15,33 @@ export default {
     TextCard
   },
   data() {
-    return { }
+    return {}
   },
-  computed : {
+  computed: {
     items() {
       return [
         {
           title: this.$t('感染予防・健康管理'),
           body:
             '<ul>' +
-            '<li>' + this.$t('不特定多数の人の集まる場所等への外出を避け、基本的に自宅で過ごしてください。') + '</li>' +
-            '<li>' + this.$t('手洗い、咳エチケット等により、感染予防に努めてください。') + '<br/>' +
+            '<li>' +
+            this.$t(
+              '不特定多数の人の集まる場所等への外出を避け、基本的に自宅で過ごしてください。'
+            ) +
+            '</li>' +
+            '<li>' +
+            this.$t(
+              '手洗い、咳エチケット等により、感染予防に努めてください。'
+            ) +
+            '<br/>' +
             '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/documents/tadasiitearai_1.pdf" target="_blank" rel="noopener">' +
             this.$t('【参考】正しい手の洗い方（PDF：357KB）') +
             '</a>' +
-            '<li>' + this.$t('規則正しい生活を心がけ、日常の健康管理に十分気を付けてください。') + '<br/>'+
+            '<li>' +
+            this.$t(
+              '規則正しい生活を心がけ、日常の健康管理に十分気を付けてください。'
+            ) +
+            '<br/>' +
             '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/documents/20200306newcoronabousi.pdf" target="_blank" rel="noopener">' +
             this.$t('新型コロナウイルスを防ぐには（PDF：250KB）') +
             '</a>' +
@@ -39,40 +51,58 @@ export default {
           title: this.$t('感染症を疑う場合の対応'),
           body:
             '<ul>' +
-            '<li>' + this.$t('風邪の症状や、37.5度以上の発熱が４日以上続いている、強いだるさ（倦怠感）、息苦しさ（呼吸困難）がある場合は、各保健所にご相談ください。') + '<br />' +
+            '<li>' +
+            this.$t(
+              '風邪の症状や、37.5度以上の発熱が４日以上続いている、強いだるさ（倦怠感）、息苦しさ（呼吸困難）がある場合は、各保健所にご相談ください。'
+            ) +
+            '<br />' +
             '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/documents/20200306newcoronasentoutelfax.pdf" target="_blank" rel="noopener">' +
             this.$t('新型コロナウイルス感染症専用相談ダイヤル（PDF: 75.4KB）') +
-            '</a>' + '</li>' +
+            '</a>' +
+            '</li>' +
             '</ul>'
         },
         {
           title: this.$t('学校の臨時休校について'),
           body:
             '<ul>' +
-            '<li>' + this.$t('各市町村ごとの対応状況、学童保育実施についてお知らせしているページです。') + '<br />' +
+            '<li>' +
+            this.$t(
+              '各市町村ごとの対応状況、学童保育実施についてお知らせしているページです。'
+            ) +
+            '<br />' +
             '<a href="https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html" target="_blank" rel="noopener">' +
             'https://www.pref.yamanashi.jp/kokusai/info_coronavirus/rinjikyuukou.html' +
-            '</a>' + '</li>' +
+            '</a>' +
+            '</li>' +
             '</ul>'
         },
         {
           title: this.$t('子育て家庭休業助成金制度について'),
           body:
             '<ul>' +
-            '<li>' + this.$t('子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。') + '<br />' +
+            '<li>' +
+            this.$t(
+              '子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。'
+            ) +
+            '<br />' +
             '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei" target="_blank" rel="noopener">' +
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei' +
-            '</a>' + '</li>' +
+            '</a>' +
+            '</li>' +
             '</ul>'
         },
         {
           title: this.$t('子供の居場所づくり等に関する取り組みについて'),
           body:
             '<ul>' +
-            '<li>' + this.$t('山梨県教育委員会による取り組みの紹介です。') + '<br />' +
+            '<li>' +
+            this.$t('山梨県教育委員会による取り組みの紹介です。') +
+            '<br />' +
             '<a href="https://www.pref.yamanashi.jp/kyouikusom/20200227.html" target="_blank" rel="noopener">' +
             this.$t('子供の居場所づくり等に関する取り組みについて') +
-            '</a>' + '</li>' +
+            '</a>' +
+            '</li>' +
             '</ul>'
         }
       ]
