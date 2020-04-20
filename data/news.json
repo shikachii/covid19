@@ -1,24 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/17",
+      "date": "2020/04/20",
       "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_emergencymeasures.html",
       "text": "山梨県における緊急事態措置について"
     },
     {
-      "date": "2020/04/17",
+      "date": "2020/04/19",
       "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html#Patients",
       "text": "令和2年4月19日報道資料（49例目）"
     },
      {
-      "date": "2020/04/16",
+      "date": "2020/04/19",
       "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_gvmessages.html",
       "text": "県民の皆様への知事からのメッセージ（令和2年4月19日）"
-    },
-    {
-      "date": "2020/04/02",
-      "url": "https://www.pref.yamanashi.jp/shokuhin-st/anzen/korona_huhyo.html",
-      "text": "新型コロナウイルス風評被害等相談窓口を開設しました"
     }
   ]
 }
