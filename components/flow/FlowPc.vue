@@ -151,5 +151,16 @@ export default {
       }
     }
   }
+
+  .Past {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .Days {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
 }
 </style>
