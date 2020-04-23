@@ -36,6 +36,15 @@
             />
           </div>
         </div>
+        <div :class="$style.Advisory">
+          <flow-pc-advisory />
+            <img
+              :class="$style.AdvisoryIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+        </div>
       </div>
     </div>
   </div>
@@ -45,12 +54,14 @@
 import FlowPcPast from './FlowPcPast.vue'
 import FlowPcDays from './FlowPcDays.vue'
 import FlowPcSuspect from './FlowPcSuspect.vue'
+import FlowPcAdvisory from './FlowPcAdvisory.vue'
 
 export default {
   components: {
     FlowPcPast,
     FlowPcDays,
-    FlowPcSuspect
+    FlowPcSuspect,
+    FlowPcAdvisory
   }
 }
 </script>
