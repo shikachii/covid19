@@ -1,14 +1,14 @@
 {
   "newsItems": [
     {
+      "date": "2020/04/23",
+      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html#Patients",
+      "text": "令和2年4月22日報道資料（51例目）"
+    },
+    {
       "date": "2020/04/22",
       "url": "https://www.pref.yamanashi.jp/shinchaku/gimukyo/0204/ouen.html",
       "text": "児童生徒の学習支援のための「やまなし小・中学生応援サイト」を開設"
-    },
-    {
-      "date": "2020/04/21",
-      "url": "https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_prevention.html#Patients",
-      "text": "令和2年4月19日報道資料（50例目）"
     },
     {
       "date": "2020/04/20",
