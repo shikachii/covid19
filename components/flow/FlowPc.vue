@@ -25,6 +25,17 @@
             />
           </div>
         </div>
+        <div :class="[$style.CardBlock, $style.CardBlockSuspect, $style.Suspect]">
+          <div :class="[$style.CardBlockInner]">
+            <flow-pc-suspect />
+            <img
+              :class="$style.CardBlockIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,11 +44,13 @@
 <script>
 import FlowPcPast from './FlowPcPast.vue'
 import FlowPcDays from './FlowPcDays.vue'
+import FlowPcSuspect from './FlowPcSuspect.vue'
 
 export default {
   components: {
     FlowPcPast,
-    FlowPcDays
+    FlowPcDays,
+    FlowPcSuspect
   }
 }
 </script>
@@ -160,6 +173,39 @@ export default {
   .Days {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+  }
+
+  .Suspect {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .Advisory {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+
+    &Icon {
+      position: absolute;
+      left: calc(50% - 23px);
+      transform: rotate(-90deg);
+      z-index: 1;
+    }
+  }
+
+  .Advisory2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .Required {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .Pcr {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
   }
 
 }
