@@ -102,7 +102,9 @@
         <div :class="$style.NotRequired">
           <flow-pc-not-required />
         </div>
-
+        <div :class="$style.Hospitalized">
+          <flow-pc-hospitalized />
+        </div>
       </div>
     </div>
   </div>
@@ -117,6 +119,7 @@ import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
 import FlowPcRequired from './FlowPcRequired.vue'
 import FlowPcPcr from './FlowPcPcr.vue'
 import FlowPcNotRequired from './FlowPcNotRequired.vue'
+import FlowPcHospitalized from './FlowPcHospitalized.vue'
 
 export default {
   components: {
@@ -127,7 +130,8 @@ export default {
     FlowPcAdvisory2,
     FlowPcRequired,
     FlowPcPcr,
-    FlowPcNotRequired
+    FlowPcNotRequired,
+    FlowPcHospitalized
   }
 }
 </script>
