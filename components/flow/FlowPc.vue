@@ -50,6 +50,41 @@
         </div>
       </div>
     </div>
+    <div :class="$style.SecondSectionWrapper">
+      <h3>
+        <i18n
+          :class="$style.TitleSmall"
+          tag="span"
+          path="{advisory}による相談結果"
+        >
+          <template v-slot:advisory>
+            <span :class="$style.TitleLarge">
+              {{ $t('新型コロナ受診相談窓口') }}
+            </span>
+          </template>
+        </i18n>
+      </h3>
+      <div :class="[$style.Outer, $style.OuterLower]">
+        <div :class="[$style.CardBlock, $style.CardBlockRequired, $style.Required]">
+          <div :class="$style.CardBlockInner">
+            <flow-pc-required />
+            <img
+              :class="$style.CardBlockIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+            <img
+              :class="$style.CardBlockIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -59,6 +94,7 @@ import FlowPcDays from './FlowPcDays.vue'
 import FlowPcSuspect from './FlowPcSuspect.vue'
 import FlowPcAdvisory from './FlowPcAdvisory.vue'
 import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
+import FlowPcRequired from './FlowPcRequired.vue'
 
 export default {
   components: {
@@ -66,7 +102,8 @@ export default {
     FlowPcDays,
     FlowPcSuspect,
     FlowPcAdvisory,
-    FlowPcAdvisory2
+    FlowPcAdvisory2,
+    FlowPcRequired
   }
 }
 </script>
@@ -82,6 +119,15 @@ export default {
     @media print {
       display: none;
     }
+  }
+}
+
+.secondSectionWrapper {
+  page-break-inside: avoid;
+  > h3 {
+    color: $purple-2;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
   }
 }
 
@@ -145,84 +191,127 @@ export default {
     margin-bottom: 36px;
   }
 
-  .CardBlock {
-    &Inner {
-      position: relative;
+  &Lower {
+    grid-gap: $grid-gap;
+    grid-template-columns: repeat(2, calc(50% - 6px));
+    -ms-grid-columns: calc(50% - 6px) 12px calc(50% - 6px);
+    grid-template-rows: repeat(3, auto);
+    -ms-grid-rows: auto 12px auto 12px auto;
+
+    & > *:nth-child(1) {
+      -ms-grid-column: 1;
+      -ms-grid-row: 1;
     }
 
-    &Icon {
-      position: absolute;
-      bottom: 10%;
-      right: -30px;
-      z-index: 1;
+    & > *:nth-child(2) {
+      -ms-grid-column: 1;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 3;
     }
 
-    &Suspect {
-      .CardBlockIcon {
-        bottom: 40%;
-      }
+    & > *:nth-child(3) {
+      -ms-grid-column: 3;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 3;
     }
 
-    &required {
-      .CardBlockIcon:nth-of-type(1) {
-        top: auto;
-        bottom: -30px;
-        right: auto;
-        left: 22%;
-        margin-top: 0;
-        transform: rotate(90deg);
-      }
-      .CardBlockIcon:nth-of-type(2) {
-        top: auto;
-        bottom: 12%;
-        right: -30px;
-        margin-top: 0;
-      }
+    & > *:nth-child(4) {
+      -ms-grid-column: 3;
+      -ms-grid-row: 5;
     }
   }
+}
 
-  .Past {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.Title {
+  @include font-size(28);
+
+  color: $purple-1;
+
+  &Small {
+    @include font-size(20);
   }
 
-  .Days {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+  &Large {
+    @include font-size(28);
   }
+}
 
-  .Suspect {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  .Advisory {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
+.CardBlock {
+  &Inner {
     position: relative;
+  }
 
-    &Icon {
-      position: absolute;
-      left: calc(50% - 23px);
-      transform: rotate(-90deg);
-      z-index: 1;
+  &Icon {
+    position: absolute;
+    bottom: 10%;
+    right: -30px;
+    z-index: 1;
+  }
+
+  &Suspect {
+    .CardBlockIcon {
+      bottom: 40%;
     }
   }
 
-  .Advisory2 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+  &Required {
+    .CardBlockIcon:nth-of-type(1) {
+      top: auto;
+      bottom: -30px;
+      right: auto;
+      left: 22%;
+      margin-top: 0;
+      transform: rotate(90deg);
+    }
+    .CardBlockIcon:nth-of-type(2) {
+      top: auto;
+      bottom: 12%;
+      right: -30px;
+      margin-top: 0;
+    }
   }
+}
 
-  .Required {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.Past {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.Days {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.Suspect {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.Advisory {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  position: relative;
+
+  &Icon {
+    position: absolute;
+    left: calc(50% - 23px);
+    transform: rotate(-90deg);
+    z-index: 1;
   }
+}
 
-  .Pcr {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-  }
+.Advisory2 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
 
+.Required {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.Pcr {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
 }
 </style>
