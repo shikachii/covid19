@@ -82,6 +82,23 @@
             />
           </div>
         </div>
+        <div :class="[$style.CardBlock, $style.CardBlockPcr, $style.Pcr]">
+          <div :class="$style.CardBlockInner">
+            <flow-pc-pcr />
+            <img
+              :class="$style.CardBlockIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+            <img
+              :class="$style.CardBlockIcon"
+              src="/flow/flow_arrow.svg"
+              aria-hidden="true"
+              alt=" "
+            />
+          </div>
+        </div>
 
       </div>
     </div>
@@ -95,6 +112,7 @@ import FlowPcSuspect from './FlowPcSuspect.vue'
 import FlowPcAdvisory from './FlowPcAdvisory.vue'
 import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
 import FlowPcRequired from './FlowPcRequired.vue'
+import FlowPcPcr from './FlowPcPcr.vue'
 
 export default {
   components: {
@@ -103,7 +121,8 @@ export default {
     FlowPcSuspect,
     FlowPcAdvisory,
     FlowPcAdvisory2,
-    FlowPcRequired
+    FlowPcRequired,
+    FlowPcPcr
   }
 }
 </script>
@@ -268,6 +287,23 @@ export default {
       bottom: 12%;
       right: -30px;
       margin-top: 0;
+    }
+  }
+
+  &Pcr {
+    .CardBlockIcon:nth-of-type(1) {
+      top: 15%;
+      bottom: auto;
+      right: -30px;
+      margin-top: auto;
+      transform: rotateZ(-30deg);
+    }
+    .CardBlockIcon:nth-of-type(2) {
+      top: auto;
+      bottom: 15%;
+      right: -30px;
+      margin-top: auto;
+      transform: rotateZ(30deg);
     }
   }
 }
