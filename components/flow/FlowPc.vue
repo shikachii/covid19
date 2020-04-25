@@ -15,7 +15,7 @@
           </div>
         </div>
         <div :class="[$style.CardBlock, $style.Days]">
-          <div class="[$style.CardBlockInner]">
+          <div :class="[$style.CardBlockInner]">
             <flow-pc-days />
             <img
               :class="$style.CardBlockIcon"
@@ -141,6 +141,7 @@ export default {
   page-break-before: avoid;
   page-break-inside: avoid;
   > h3 {
+    text-align: start;
     color: $gray-2;
     font-size: 1.5rem;
     margin-bottom: 7px;
@@ -150,10 +151,11 @@ export default {
   }
 }
 
-.secondSectionWrapper {
+.SecondSectionWrapper {
   page-break-inside: avoid;
   > h3 {
-    color: $purple-2;
+    text-align: start;
+    color: $purple-1;
     font-size: 1.5rem;
     margin-bottom: 7px;
   }
@@ -260,7 +262,7 @@ export default {
   }
 
   &Large {
-    @include font-size(28);
+    @include font-size(36);
   }
 }
 
@@ -339,6 +341,7 @@ export default {
 
   &Icon {
     position: absolute;
+    bottom: -55px;
     left: calc(50% - 23px);
     transform: rotate(-90deg);
     z-index: 1;

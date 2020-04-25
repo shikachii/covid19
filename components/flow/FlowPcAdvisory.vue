@@ -2,7 +2,7 @@
   <div :class="$style.Advisory">
     <div :class="$style.AdvisoryContainer">
       <div :class="$style.AdvisoryContents">
-        <div>
+        <div style="width:70%; margin:0 auto;">
           <span :class="$style.AdvisoryContentsTitle">{{
             $t('新型コロナ受診相談窓口')
           }}</span>
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div :class="$style.AdvisoryCOntents">
+      <div :class="$style.AdvisoryContents">
         <div class="py-8">
           <div :class="$style.AdvisoryContentsTitle2">
             {{ $t('平日（日中）') }}
@@ -64,6 +64,10 @@
             'mt-1'
           ]"
         >
+          <p>
+            {{ $t('メッセージにより緊急電話番号が案内されます') }}
+          </p>
+          <!--
           <a :class="$style.AdvisoryTelephone" href="tel">
             <img
               :class="$style.AdvisoryTelephoneIcon"
@@ -73,6 +77,7 @@
             />
             000-0000
           </a>
+          -->
         </div>
         <div v-if="!['ja'].includes($i18n.locale)" class="pt-8">
           <span>{{ $t('ひまわり') }}</span>
@@ -98,7 +103,7 @@
     border-radius: 4px;
     height: 100%;
     padding: 30px 20px 20px 20px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     text-align: center;
   }
 
@@ -137,7 +142,7 @@
     text-align: left;
 
     a {
-      color: rgba(0, 0, 0, 0.87);
+      color: $gray-2;
       text-decoration: none;
 
       &:hover {
