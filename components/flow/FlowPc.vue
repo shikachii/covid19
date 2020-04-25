@@ -99,6 +99,9 @@
             />
           </div>
         </div>
+        <div :class="$style.NotRequired">
+          <flow-pc-not-required />
+        </div>
 
       </div>
     </div>
@@ -113,6 +116,7 @@ import FlowPcAdvisory from './FlowPcAdvisory.vue'
 import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
 import FlowPcRequired from './FlowPcRequired.vue'
 import FlowPcPcr from './FlowPcPcr.vue'
+import FlowPcNotRequired from './FlowPcNotRequired.vue'
 
 export default {
   components: {
@@ -122,7 +126,8 @@ export default {
     FlowPcAdvisory,
     FlowPcAdvisory2,
     FlowPcRequired,
-    FlowPcPcr
+    FlowPcPcr,
+    FlowPcNotRequired
   }
 }
 </script>
@@ -296,14 +301,14 @@ export default {
       bottom: auto;
       right: -30px;
       margin-top: auto;
-      transform: rotateZ(-30deg);
+      // transform: rotateZ(-30deg);
     }
     .CardBlockIcon:nth-of-type(2) {
       top: auto;
       bottom: 15%;
       right: -30px;
       margin-top: auto;
-      transform: rotateZ(30deg);
+      // transform: rotateZ(30deg);
     }
   }
 }
@@ -349,5 +354,22 @@ export default {
 .Pcr {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+}
+
+.NotRequired {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.Hospitalized {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.Note {
+  margin: 16px 0;
+  @media print {
+    margin: 5px;
+  }
 }
 </style>
