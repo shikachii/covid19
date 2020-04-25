@@ -45,6 +45,9 @@
               alt=" "
             />
         </div>
+        <div :class="$style.Advisory2">
+          <flow-pc-advisory2 />
+        </div>
       </div>
     </div>
   </div>
@@ -55,13 +58,15 @@ import FlowPcPast from './FlowPcPast.vue'
 import FlowPcDays from './FlowPcDays.vue'
 import FlowPcSuspect from './FlowPcSuspect.vue'
 import FlowPcAdvisory from './FlowPcAdvisory.vue'
+import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
 
 export default {
   components: {
     FlowPcPast,
     FlowPcDays,
     FlowPcSuspect,
-    FlowPcAdvisory
+    FlowPcAdvisory,
+    FlowPcAdvisory2
   }
 }
 </script>
