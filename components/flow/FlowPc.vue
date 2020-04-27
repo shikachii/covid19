@@ -25,7 +25,9 @@
             />
           </div>
         </div>
-        <div :class="[$style.CardBlock, $style.CardBlockSuspect, $style.Suspect]">
+        <div
+          :class="[$style.CardBlock, $style.CardBlockSuspect, $style.Suspect]"
+        >
           <div :class="[$style.CardBlockInner]">
             <flow-pc-suspect />
             <img
@@ -38,12 +40,12 @@
         </div>
         <div :class="$style.Advisory">
           <flow-pc-advisory />
-            <img
-              :class="$style.AdvisoryIcon"
-              src="/flow/flow_arrow.svg"
-              aria-hidden="true"
-              alt=" "
-            />
+          <img
+            :class="$style.AdvisoryIcon"
+            src="/flow/flow_arrow.svg"
+            aria-hidden="true"
+            alt=" "
+          />
         </div>
         <div :class="$style.Advisory2">
           <flow-pc-advisory2 />
@@ -65,7 +67,9 @@
         </i18n>
       </h3>
       <div :class="[$style.Outer, $style.OuterLower]">
-        <div :class="[$style.CardBlock, $style.CardBlockRequired, $style.Required]">
+        <div
+          :class="[$style.CardBlock, $style.CardBlockRequired, $style.Required]"
+        >
           <div :class="$style.CardBlockInner">
             <flow-pc-required />
             <img

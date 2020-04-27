@@ -3,7 +3,7 @@
     <h3 :class="$style.sectionTitle">
       <i18n path="新型コロナ外来 {advice} と判断された場合" tag="p">
         <template v-slot:advice>
-          <span><strong>{{ $t('受診が不要') }}</strong></span>
+          <strong>{{ $t('受診が不要') }}</strong>
         </template>
       </i18n>
     </h3>
@@ -42,8 +42,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style module lang="scss">
 .flowContainer {
@@ -91,8 +90,8 @@
 .actionsList {
   list-style-type: none;
   text-align: start;
-  margin-top: 2.0rem;
-  margin-bottom: 2.0rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
@@ -114,7 +113,7 @@
 
   .content {
     display: flex;
-    flex-direction :column;
+    flex-direction: column;
     height: 100%;
     justify-content: space-around;
   }

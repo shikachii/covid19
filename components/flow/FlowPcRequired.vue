@@ -68,7 +68,7 @@ export default {
   @include card-container();
 
   display: flex;
-  flex-directioN: column;
+  flex-direction: column;
   position: relative;
   padding: 20px 30px !important;
   text-align: center;
@@ -100,9 +100,9 @@ export default {
 }
 
 .Card {
-  width :48%;
+  width: 48%;
   display: flex;
-  flex-directioN :column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 4px;

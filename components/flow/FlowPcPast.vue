@@ -110,7 +110,6 @@
           />
         </em>
       </div>
-
     </div>
   </section>
 </template>
@@ -119,7 +118,7 @@
 export default {
   computed: {
     langsNeedReversedOrder() {
-      return [ 'en' ]
+      return ['en']
     }
   }
 }

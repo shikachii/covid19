@@ -32,11 +32,13 @@
             ]"
           >
             <a
-              href=""
+              href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{{ $t('こちらから管轄地域の保健所へご連絡ください') }}</span>
+              <span>{{
+                $t('こちらから管轄地域の保健所へご連絡ください')
+              }}</span>
               <v-icon size="18">
                 mdi-open-in-new
               </v-icon>
@@ -87,8 +89,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style module lang="scss">
 .Advisory {

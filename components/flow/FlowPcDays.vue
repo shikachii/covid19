@@ -149,8 +149,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style module lang="scss">
 .Flow {
@@ -229,7 +228,7 @@
         text-align: center;
         display: inline-block;
         margin: 0 !important;
-        font-size: calc(0.875rem + (( 1vw - 7.68px) * 0.8929));
+        font-size: calc(0.875rem + ((1vw - 7.68px) * 0.8929));
         font-weight: bold;
 
         @include largerThan($large) {

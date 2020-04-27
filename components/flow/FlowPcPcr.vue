@@ -21,8 +21,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style module lang="scss">
 .FlowPcPcr {
@@ -81,7 +80,7 @@
   border-radius: 4px;
   border: 2px solid $purple-1;
   line-height: 1;
-  padding: 1.0rem 0.1rem;
+  padding: 1rem 0.1rem;
 
   &.positive {
     background: $purple-1;

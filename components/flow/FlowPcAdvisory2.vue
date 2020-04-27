@@ -8,8 +8,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style module lang="scss">
 .Container {
