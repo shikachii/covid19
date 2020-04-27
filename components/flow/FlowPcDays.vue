@@ -241,7 +241,7 @@
         font-size: calc(1rem + ((1vw - 7.68px) * 2.4876));
 
         @include largerThan($large) {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
 

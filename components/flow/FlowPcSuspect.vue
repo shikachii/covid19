@@ -219,7 +219,7 @@
   z-index: 1;
 }
 
-.LargeText {
+.LargerText {
   font-size: larger;
   font-weight: bold;
   @media print {
