@@ -11,14 +11,6 @@
       <div class="Flow-Card-Images only-pc">
         <FlowPc />
       </div>
-    </div>
-    <div class="Flow-Card">
-      <h2>
-        新型コロナウイルス感染症にかかる相談窓口について
-      </h2>
-      <div class="Flow-Card-Images only-pc">
-        <DesktopFlowSvg />
-      </div>
       <div class="only-sp">
         <div class="Flow-Card-Parts">
           <div class="mb-5">
