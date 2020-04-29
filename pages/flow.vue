@@ -7,6 +7,9 @@
       </h2>
       <PrinterButton :wrapper-class="'Flow-PullRight'" />
     </div>
+    <div class="only-sp">
+      <flow-sp />
+    </div>
     <div class="Flow-Card">
       <h2>
         新型コロナウイルス感染症にかかる相談窓口について
@@ -212,9 +215,10 @@
 <script>
 import CovidIcon from '@/static/covid.svg'
 import PrinterButton from '@/components/PrinterButton'
+import FlowSp from '@/components/flow/FlowSp.vue'
 import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
 export default {
-  components: { CovidIcon, PrinterButton, DesktopFlowSvg },
+  components: { CovidIcon, PrinterButton, FlowSp, DesktopFlowSvg },
   head() {
     return {
       title: '新型コロナウイルス感染症が心配なときに'
