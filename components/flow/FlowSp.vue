@@ -4,17 +4,18 @@
       {{ $t('新型コロナウイルス感染症にかかる相談窓口について') }}
     </h3>
     <div :class="$style.FlowCard">
+      <flow-sp-past />
     </div>
   </div>
 </template>
 
 <script>
 import VueScrollTo from 'vue-scrollto'
-// import FlowSpPast from './FlowSpPast.vue'
+import FlowSpPast from './FlowSpPast.vue'
 
 export default {
   components: {
-//    FlowSpPast
+    FlowSpPast
   },
   mounted() {
     const hash = this.$route.hash
