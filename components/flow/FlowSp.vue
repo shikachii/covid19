@@ -12,6 +12,9 @@
     <div :class="$style.FlowCard">
       <flow-sp-elder />
     </div>
+    <div :class="$style.FlowCard">
+      <flow-sp-suspect />
+    </div>
   </div>
 </template>
 
@@ -20,12 +23,14 @@ import VueScrollTo from 'vue-scrollto'
 import FlowSpPast from './FlowSpPast.vue'
 import FlowSpGeneral from './FlowSpGeneral.vue'
 import FlowSpElder from './FlowSpElder.vue'
+import FlowSpSuspect from './FlowSpSuspect.vue'
 
 export default {
   components: {
     FlowSpPast,
     FlowSpGeneral,
-    FlowSpElder
+    FlowSpElder,
+    FlowSpSuspect
   },
   mounted() {
     const hash = this.$route.hash
