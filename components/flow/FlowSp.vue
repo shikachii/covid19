@@ -6,16 +6,21 @@
     <div :class="$style.FlowCard">
       <flow-sp-past />
     </div>
+    <div :class="$style.FlowCard">
+      <flow-sp-general />
+    </div>
   </div>
 </template>
 
 <script>
 import VueScrollTo from 'vue-scrollto'
 import FlowSpPast from './FlowSpPast.vue'
+import FlowSpGeneral from './FlowSpGeneral.vue'
 
 export default {
   components: {
-    FlowSpPast
+    FlowSpPast,
+    FlowSpGeneral
   },
   mounted() {
     const hash = this.$route.hash
