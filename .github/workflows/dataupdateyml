@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: copy data.json
-        run: curl -o data/data.json https://raw.githubusercontent.com/wataruoguchi/covid19_nagano_csv_to_json/master/data.json 
+        run: curl -o data/data.json https://github.com/daisuke19891023/covid19-yamanashi-scraping/blob/master/data.json 
       
       - name: Commit files
         run: |
