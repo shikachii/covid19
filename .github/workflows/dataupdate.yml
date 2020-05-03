@@ -10,14 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: copy data.json
+      - name: Copy data.json
         run: curl -o data/data.json https://raw.githubusercontent.com/daisuke19891023/covid19-yamanashi-scraping/master/data.json
       
       - name: Commit files
         run: |
-          git config --local user.email secrets.EMAIL
           git config --local user.name "Scraping Bot"
-          git status | grep modified && git add data/data.json && git commit -v -m "[Bot] GitHub Actions - update data.json"
+          git status | grep modified && git add data/data.json && git commit -v -m "[Bot] GitHub Actions - update data.json at $(date +'%Y-%m-%d')"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2.7.1
+        with:
+          title: "[Bot] GitHub Actions - update data.json at $(date +'%Y-%m-%d')"
