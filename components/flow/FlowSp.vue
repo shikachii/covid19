@@ -15,6 +15,9 @@
     <div :class="$style.FlowCard">
       <flow-sp-suspect />
     </div>
+    <div :class="[$style.FlowCard, $style.FlowCardGrayBg]">
+      <flow-sp-advisory />
+    </div>
   </div>
 </template>
 
@@ -24,13 +27,15 @@ import FlowSpPast from './FlowSpPast.vue'
 import FlowSpGeneral from './FlowSpGeneral.vue'
 import FlowSpElder from './FlowSpElder.vue'
 import FlowSpSuspect from './FlowSpSuspect.vue'
+import FlowSpAdvisory from './FlowSpAdvisory.vue'
 
 export default {
   components: {
     FlowSpPast,
     FlowSpGeneral,
     FlowSpElder,
-    FlowSpSuspect
+    FlowSpSuspect,
+    FlowSpAdvisory
   },
   mounted() {
     const hash = this.$route.hash
