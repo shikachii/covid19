@@ -18,6 +18,12 @@
     <div :class="[$style.FlowCard, $style.FlowCardGrayBg]">
       <flow-sp-advisory />
     </div>
+    <div :class="$style.FlowCard">
+      <flow-sp-according />
+    </div>
+    <div :class="$style.FlowCard">
+      <flow-sp-hospitalized />
+    </div>
   </div>
 </template>
 
@@ -28,6 +34,8 @@ import FlowSpGeneral from './FlowSpGeneral.vue'
 import FlowSpElder from './FlowSpElder.vue'
 import FlowSpSuspect from './FlowSpSuspect.vue'
 import FlowSpAdvisory from './FlowSpAdvisory.vue'
+import FlowSpAccording from './FlowSpAccording.vue'
+import FlowSpHospitalized from './FlowSpHospitalized.vue'
 
 export default {
   components: {
@@ -35,7 +43,9 @@ export default {
     FlowSpGeneral,
     FlowSpElder,
     FlowSpSuspect,
-    FlowSpAdvisory
+    FlowSpAdvisory,
+    FlowSpAccording,
+    FlowSpHospitalized
   },
   mounted() {
     const hash = this.$route.hash
