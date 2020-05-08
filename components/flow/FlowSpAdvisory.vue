@@ -20,7 +20,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ $t('各保健所の電話番号は福祉保健所HPへ') }}
+          {{ $t('こちらから管轄地域の保健所へご連絡ください') }}
           <v-icon size="16">
             mdi-open-in-new
           </v-icon>

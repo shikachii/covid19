@@ -16,14 +16,14 @@
         <strong :class="$style.source">{{ $t('「新型コロナウイルス感染者」と') }}</strong>
         <i18n tag="span" path="{closeContact}をした方" :class="[$style.behavior, $style.fzXLarge]">
           <template v-slot:closeContact>
-            <em :class="$style.underLine">{{ $t('濃厚接触') }}</em>
+            <em :class="$style.underline">{{ $t('濃厚接触') }}</em>
           </template>
         </i18n>
       </template>
       <template v-else>
         <i18n tag="span" path="{closeContact}をした方" :class="[$style.behavior, $style.fzXLarge]">
           <template v-slot:closeContact>
-            <em :class="$style.underLine">{{ $t('濃厚接触') }}</em>
+            <em :class="$style.underline">{{ $t('濃厚接触') }}</em>
           </template>
         </i18n>
         <strong :class="$style.source">{{ $t('「新型コロナウイルス感染者」と') }}</strong>
