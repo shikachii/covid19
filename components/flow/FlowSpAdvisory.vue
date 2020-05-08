@@ -16,7 +16,7 @@
         </dt>
         <dd :class="$style.link">
         <a
-          href=""
+          href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
           target="_blank"
           rel="noopener noreferrer"
         >
