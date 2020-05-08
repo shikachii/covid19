@@ -67,7 +67,7 @@
       <span :class="$style.break">
         <span :class="$style.fzXLLarge">{{ $t('PCR検査') }}</span>
       </span>
-      <span :class="$style.break">
+      <span :class="[$style.break, $style.fzLarge]">
         {{ $t('感染症指定医療機関等') }}
       </span>
     </p>

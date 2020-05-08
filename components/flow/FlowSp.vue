@@ -94,6 +94,8 @@ export default {
     @include button-text('md');
     margin: 12px auto 0;
     @include font-size(20);
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     text-decoration: none;
     color: $purple-1 !important;
