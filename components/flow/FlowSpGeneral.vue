@@ -17,7 +17,11 @@
       <li :class="$style.symptom">
         <i18n tag="span" :class="$style.fzSmall" path="発熱{temperature}">
           <template v-slot:temperature>
-            <i18n tag="span" path="{tempNum}以上" :class="[$style.break, $style.fzRegular]">
+            <i18n
+              tag="span"
+              path="{tempNum}以上"
+              :class="[$style.break, $style.fzRegular]"
+            >
               <template v-slot:tempNum>
                 <span :class="$style.temp">{{ $t('37.5℃') }}</span>
               </template>
@@ -35,7 +39,11 @@
     <p :class="$style.duration">
       <i18n path="{duration}続いている">
         <template v-slot:duration>
-          <i18n tag="span" path="{day}日以上" :class="[$style.underline, $style.fzLarge]">
+          <i18n
+            tag="span"
+            path="{day}日以上"
+            :class="[$style.underline, $style.fzLarge]"
+          >
             <template v-slot:day>
               <strong :class="$style.fzNumeric">4</strong>
             </template>
@@ -43,7 +51,11 @@
         </template>
       </i18n>
     </p>
-    <a v-scroll-to="{ el: '#consult', onDone: onDoneScroll }" href="#consult" :class="[$style.button, $style.clickable]">
+    <a
+      v-scroll-to="{ el: '#consult', onDone: onDoneScroll }"
+      href="#consult"
+      :class="[$style.button, $style.clickable]"
+    >
       <span :class="$style.text">{{ $t('新型コロナ受診相談窓口へ') }}</span>
       <arrow-forward-icon :class="$style.icon" />
     </a>

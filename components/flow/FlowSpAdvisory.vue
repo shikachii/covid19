@@ -15,16 +15,16 @@
           {{ $t('平日（日中）') }}
         </dt>
         <dd :class="$style.link">
-        <a
-          href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {{ $t('こちらから管轄地域の保健所へご連絡ください') }}
-          <v-icon size="16">
-            mdi-open-in-new
-          </v-icon>
-        </a>
+          <a
+            href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $t('こちらから管轄地域の保健所へご連絡ください') }}
+            <v-icon size="16">
+              mdi-open-in-new
+            </v-icon>
+          </a>
         </dd>
       </div>
       <div>

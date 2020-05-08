@@ -13,20 +13,32 @@
     </h4>
     <p :class="$style.type">
       <template v-if="!langsNeedReversedOrder.includes($i18n.locale)">
-        <strong :class="$style.source">{{ $t('「新型コロナウイルス感染者」と') }}</strong>
-        <i18n tag="span" path="{closeContact}をした方" :class="[$style.behavior, $style.fzXLarge]">
+        <strong :class="$style.source">{{
+          $t('「新型コロナウイルス感染者」と')
+        }}</strong>
+        <i18n
+          tag="span"
+          path="{closeContact}をした方"
+          :class="[$style.behavior, $style.fzXLarge]"
+        >
           <template v-slot:closeContact>
             <em :class="$style.underline">{{ $t('濃厚接触') }}</em>
           </template>
         </i18n>
       </template>
       <template v-else>
-        <i18n tag="span" path="{closeContact}をした方" :class="[$style.behavior, $style.fzXLarge]">
+        <i18n
+          tag="span"
+          path="{closeContact}をした方"
+          :class="[$style.behavior, $style.fzXLarge]"
+        >
           <template v-slot:closeContact>
             <em :class="$style.underline">{{ $t('濃厚接触') }}</em>
           </template>
         </i18n>
-        <strong :class="$style.source">{{ $t('「新型コロナウイルス感染者」と') }}</strong>
+        <strong :class="$style.source">{{
+          $t('「新型コロナウイルス感染者」と')
+        }}</strong>
       </template>
     </p>
     <div :class="[$style.rectContainer, $style.req]">
@@ -42,8 +54,14 @@
     </div>
     <p :class="[$style.type, $style.hr]">
       <template v-if="!langsWithoutFlowTitle.includes($i18n.locale)">
-        <strong :class="$style.source">{{ $t('流行地域への渡航・居住歴がある方') }}</strong>
-        <i18n tag="span" path="{you} か {closeContact}をした方" :class="[$style.behavior, $style.fzXLarge]">
+        <strong :class="$style.source">{{
+          $t('流行地域への渡航・居住歴がある方')
+        }}</strong>
+        <i18n
+          tag="span"
+          path="{you} か {closeContact}をした方"
+          :class="[$style.behavior, $style.fzXLarge]"
+        >
           <template v-slot:you>
             <em :class="$style.underline">{{ $t('ご本人') }}</em>
           </template>
@@ -63,7 +81,11 @@
       <p :class="$style.symptom">
         <i18n tag="span" path="発熱{temperature}" :class="$style.fzSmall">
           <template v-slot:temperature>
-            <i18n tag="span" path="{tempNum}以上" :class="[$style.break, $style.fzRegular]">
+            <i18n
+              tag="span"
+              path="{tempNum}以上"
+              :class="[$style.break, $style.fzRegular]"
+            >
               <template v-slot:tempNum>
                 <span :class="$style.temp">{{ $t('37.5℃') }}</span>
               </template>
@@ -72,12 +94,13 @@
         </i18n>
       </p>
     </div>
-    <a v-scroll-to="{
-      el: '#consult',
-      onDone: onDoneScroll
+    <a
+      v-scroll-to="{
+        el: '#consult',
+        onDone: onDoneScroll
       }"
-        href="#consult"
-        :class="[$style.button, $style.clickable]"
+      href="#consult"
+      :class="[$style.button, $style.clickable]"
     >
       <span :class="$style.text">{{ $t('新型コロナ受診相談窓口へ') }}</span>
       <arrow-forward-icon :class="$style.icon" />
@@ -162,7 +185,6 @@ export default {
   .type {
     margin-top: px2vw(20, $vw);
 
-
     &.hr {
       margin-top: px2vw(30, $vw);
       padding-top: px2vw(30, $vw);
@@ -185,7 +207,7 @@ export default {
     &.req {
       margin-top: px2vw(20, $vw);
 
-      >.op {
+      > .op {
         flex-basis: 20%;
         margin-top: px2vw(30, $vw);
         padding: px2vw(15, $vw) px2vw(15, $vw) px2vw(10, $vw);

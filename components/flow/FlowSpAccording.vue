@@ -7,7 +7,11 @@
         </span>
       </template>
     </i18n>
-    <i18n tag="p" :class="$style.diag" path="新型コロナ外来 {advice} と判断された場合">
+    <i18n
+      tag="p"
+      :class="$style.diag"
+      path="新型コロナ外来 {advice} と判断された場合"
+    >
       <template v-slot:advice>
         <span :class="[$style.fzXLLarge, $style.break]">
           {{ $t('受診が必要') }}
@@ -43,7 +47,7 @@
           </template>
         </i18n>
         <div :class="$style.arrow" aria-hidden="true">
-          <purple-arrow-icon />
+          <arrow-icon />
         </div>
       </a>
       <a
@@ -59,7 +63,7 @@
           </template>
         </i18n>
         <div :class="$style.arrow" aria-hidden="true">
-          <arrow-downward-icon />
+          <arrow-icon />
         </div>
       </a>
     </div>
@@ -81,7 +85,7 @@
           <span :class="$style.fzXLarge">{{ $t('陰性') }}</span>
         </p>
         <div :class="$style.arrow" aria-hidden="true">
-          <purple-arrow-icon />
+          <arrow-icon />
         </div>
       </a>
       <a
@@ -93,11 +97,16 @@
           <span :class="$style.fzXLarge">{{ $t('陽性') }}</span>
         </p>
         <div :class="$style.arrow" aria-hidden="true">
-          <arrow-downward-icon />
+          <arrow-icon />
         </div>
       </a>
     </div>
-    <i18n id="not_required" tag="p" :class="[$style.diag, $style.hr]" path="新型コロナ外来 {advice} と判断された場合">
+    <i18n
+      id="not_required"
+      tag="p"
+      :class="[$style.diag, $style.hr]"
+      path="新型コロナ外来 {advice} と判断された場合"
+    >
       <template v-slot:advice>
         <span :class="[$style.break, $style.fzXLLarge]">
           {{ $t('受診が不要') }}
@@ -136,15 +145,13 @@
 <script>
 import HouseIcon from '@/static/flow/house-24px.svg'
 import ApartmentIcon from '@/static/flow/apartment-24px.svg'
-import ArrowDownwardIcon from '@/static/flow/arrow_forward-24px.svg'
-import PurpleArrowIcon from '@/static/flow/arrow_forward-24px.svg'
+import ArrowIcon from '@/static/flow/arrow_forward-24px.svg'
 
 export default {
   components: {
     HouseIcon,
     ApartmentIcon,
-    ArrowDownwardIcon,
-    PurpleArrowIcon
+    ArrowIcon
   },
   computed: {
     langsWithoutOutpatient() {

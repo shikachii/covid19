@@ -151,7 +151,8 @@ export default {
         },
         {
           title: this.$t('Message from Governor Nagasaki'),
-          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_gvmessages.html'
+          link:
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_gvmessages.html'
         },
         {
           title: this.$t('Government official website'),

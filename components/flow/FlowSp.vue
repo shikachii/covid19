@@ -61,7 +61,7 @@ export default {
   mounted() {
     const hash = this.$route.hash
     if (hash !== '') {
-      VueScrollTo.scrollTo(hash, 1000, { offset: -72})
+      VueScrollTo.scrollTo(hash, 1000, { offset: -72 })
     }
   }
 }

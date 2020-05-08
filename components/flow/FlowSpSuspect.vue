@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <h4 :class="$style.heading">
-      <span :class="[$style.icon , $style.top]">
+      <span :class="[$style.icon, $style.top]">
         <sentiment-icon aria-hidden="true" />
       </span>
       <span :class="$style.fzMedium">{{ $t('不安に思う方') }}</span>
@@ -27,7 +27,9 @@
           </span>
         </template>
       </i18n>
-      <p :class="$style.open">{{ $t('午前9時から午後9時（土日祝含む）') }}</p>
+      <p :class="$style.open">
+        {{ $t('午前9時から午後9時（土日祝含む）') }}
+      </p>
       <p :class="[$style.phone, $style.fzNumeric]">
         <span :class="$style.icon">
           <phone-icon alt="Phone" />
@@ -36,7 +38,11 @@
       </p>
     </div>
 
-    <a v-scroll-to="{ el: '#consult', onDone: onDoneScroll }" href="#consult" :class="[$style.button, $style.clickable]">
+    <a
+      v-scroll-to="{ el: '#consult', onDone: onDoneScroll }"
+      href="#consult"
+      :class="[$style.button, $style.clickable]"
+    >
       <span :class="$style.text">{{ $t('専門的な助言が必要な場合') }}</span>
       <arrow-forward-icon :class="$style.icon" />
     </a>
