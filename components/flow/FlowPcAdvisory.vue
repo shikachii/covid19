@@ -48,13 +48,13 @@
       </div>
 
       <div :class="$style.AdvisoryContents">
-        <div class="py-8">
+        <div :class="$style.mt8">
           <div :class="$style.AdvisoryContentsTitle2">
             {{ $t('平日（夜間）') }}
           </div>
           <span>{{ $t('午後5時から翌朝午前9時') }}</span>
         </div>
-        <div class="mt-1">
+        <div :class="$style.mt1">
           <span :class="$style.AdvisoryContentsSubTitle">
             {{ $t('土日祝日 終日') }}
           </span>
@@ -63,7 +63,7 @@
           :class="[
             $style.AdvisoryTelephoneArea,
             $style.AdvisoryBlockCentering,
-            'mt-1'
+            $style.mt8
           ]"
         >
           <p>
@@ -206,5 +206,13 @@
       font-weight: bold;
     }
   }
+}
+
+.mt1 {
+  margin-top: 4px !important;
+}
+
+.mt8 {
+  margin-top: 32px !important;
 }
 </style>
