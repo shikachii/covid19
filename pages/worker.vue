@@ -33,7 +33,8 @@ export default {
         },
         {
           title: '子育て家庭休業助成金制度',
-          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person',
+          link:
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person',
           body:
             '子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。'
         },
@@ -46,7 +47,8 @@ export default {
         },
         {
           title: '中小企業者等特別相談窓口',
-          link: 'https://www.pref.yamanashi.jp/shouko-kik/koronasoudanmadoguchi.html',
+          link:
+            'https://www.pref.yamanashi.jp/shouko-kik/koronasoudanmadoguchi.html',
           body:
             '県、商工会議所、商工会などの新型コロナウイルスに関する中小企業・小規模企業の相談窓口の一覧です。'
         },
