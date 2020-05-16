@@ -24,17 +24,6 @@
     <div :class="$style.FlowCard">
       <flow-sp-hospitalized />
     </div>
-    <a
-      href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
-      target="_blank"
-      rel="noopener"
-      :class="$style.FlowCardButton"
-    >
-      詳細を見る(山梨県のウェブサイト)
-      <v-icon :class="$style.FlowCardButtonExternalLinkIcon" size="20">
-        mdi-open-in-new
-      </v-icon>
-    </a>
   </div>
 </template>
 

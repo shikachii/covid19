@@ -9,11 +9,22 @@
     </div>
     <div class="Flow-Card">
       <div class="Flow-Card-Images only-pc">
-        <DesktopFlowSvg />
+        <FlowPc />
       </div>
       <div class="only-sp">
         <flow-sp />
       </div>
+      <a
+        href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_HealthConsultation"
+        target="_blank"
+        rel="noopener"
+        class="Flow-Card-Button"
+      >
+        詳細を見る(山梨県のウェブサイト)
+        <v-icon class="Flow-Card-Button-ExternalLinkIcon" size="20">
+          mdi-open-in-new
+        </v-icon>
+      </a>
     </div>
   </div>
 </template>
@@ -21,10 +32,11 @@
 <script>
 import CovidIcon from '@/static/covid.svg'
 import PrinterButton from '@/components/PrinterButton'
+import FlowPc from '@/components/flow/FlowPc.vue'
 import FlowSp from '@/components/flow/FlowSp.vue'
-import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
+
 export default {
-  components: { CovidIcon, PrinterButton, FlowSp, DesktopFlowSvg },
+  components: { CovidIcon, PrinterButton, FlowPc, FlowSp },
   head() {
     return {
       title: '新型コロナウイルス感染症が心配なときに'
@@ -137,6 +149,7 @@ export default {
       @include button-text('md');
       margin: 12px auto 0;
       @include font-size(20);
+      text-align: center;
       font-weight: 600;
       text-decoration: none;
       color: $purple-1 !important;
