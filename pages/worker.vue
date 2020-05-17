@@ -41,7 +41,7 @@ export default Vue.extend({
         {
           title: '子育て家庭休業助成金制度',
           link:
-            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html#josei',
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_support.html#person',
           body:
             '子どもが小学校や保育所等へ登校・登園をしなかったことに伴い保護者が休業を余儀なくされた方に、一定額の助成を行うものです。'
         },
