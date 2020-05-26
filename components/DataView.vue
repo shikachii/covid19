@@ -105,7 +105,7 @@ export default class DataView extends Vue {
     flex-flow: column;
     color: $gray-2;
     &.with-infoPanel {
-      width: calc(100% - 11em);
+      width: calc(100% - 15em);
     }
   }
   &-Title {
