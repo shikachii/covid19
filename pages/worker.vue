@@ -73,13 +73,15 @@ export default Vue.extend({
         },
         {
           title: '農業者の皆様へ',
-          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/documents/consultatiion_agri.pdf',
+          link:
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/documents/consultatiion_agri.pdf',
           body:
             '新型コロナウイルスの影響を受けた農業者の皆さまの経営や資金繰り等に関する相談窓口の案内です。'
         },
         {
           title: '水産漁業者の皆様へ',
-          link: 'https://www.pref.yamanashi.jp/koucho/coronavirus/documents/suisan_2.pdf',
+          link:
+            'https://www.pref.yamanashi.jp/koucho/coronavirus/documents/suisan_2.pdf',
           body:
             '新型コロナウイルスの影響を受けた水産漁業者の皆さまの経営や資金繰り等に関する相談窓口の案内です。'
         }

@@ -87,9 +87,7 @@ export default {
           lText: `${this.chartData.slice(-1)[0].transition.toLocaleString()}`,
           sText: `${this.$t('実績値')}（${this.$t('前日比')}：${
             this.displayTransitionRatio
-          } ${
-            this.$tc(this.unit, this.displayTransitionRatio)
-          }）`,
+          } ${this.$tc(this.unit, this.displayTransitionRatio)}）`,
           unit: this.$tc(this.unit, parseInt(this.chartData.slice(-1)[0]))
         }
       }
@@ -99,9 +97,10 @@ export default {
         ].cumulative.toLocaleString(),
         sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
           '累計値'
-        )}（${this.$t('前日比')}：${this.displayCumulativeRatio} ${
-          this.$tc(this.unit, this.displayCumulativeRatio)
-        }）`,
+        )}（${this.$t('前日比')}：${this.displayCumulativeRatio} ${this.$tc(
+          this.unit,
+          this.displayCumulativeRatio
+        )}）`,
         unit: this.$tc(this.unit, parseInt(this.chartData.slice(-1)[0]))
       }
     },
@@ -140,9 +139,17 @@ export default {
       }
     },
     displayOption() {
-      const unit = this.unit
-      // 再レンダリング用に残しておく
+      /* eslint-disable no-unused-vars */
+      /* eslint-disable @typescript-eslint/no-unused-vars */
+      /*
+       * displayOption内の値が変更されたときにグラフを再レンダリングすることで横軸が言語切り替えと同時に翻訳されるために必要
+       * もしこれがなくても同時に変わるようであれば削除してください
+       */
       const watcher = this.$t(this.unit)
+      /* eslint-enable @typescript-eslint/no-unused-vars */
+      /* eslint-enable no-unused-vars */
+
+      const unit = this.unit
       // コールバック内では呼び出すことができないので保管
       const ctx = this
       const scaledTicksYAxisMax = this.scaledTicksYAxisMax
