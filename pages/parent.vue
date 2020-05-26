@@ -56,8 +56,8 @@ export default {
               '風邪の症状や、37.5度以上の発熱が４日以上続いている、強いだるさ（倦怠感）、息苦しさ（呼吸困難）がある場合は、各保健所にご相談ください。'
             ) +
             '<br />' +
-            '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/documents/20200306newcoronasentoutelfax.pdf" target="_blank" rel="noopener">' +
-            this.$t('新型コロナウイルス感染症専用相談ダイヤル（PDF: 75.4KB）') +
+            '<a href="https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_consultation.html#Covid19_GeneralConsultation" target="_blank" rel="noopener">' +
+            this.$t('新型コロナウイルス感染症専用相談ダイヤル') +
             '</a>' +
             '</li>' +
             '</ul>'
