@@ -117,7 +117,7 @@ export default {
       return {
         lText: this.info.lText,
         sText: this.$t('{date}' + this.info.sText, { date: this.info.date }),
-        unit: this.$t(this.info.unit)
+        unit: this.$tc(this.info.unit, parseInt(this.info.lText))
       }
     },
     tableHeader() {

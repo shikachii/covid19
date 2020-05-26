@@ -20,7 +20,7 @@
           :chart-id="'time-bar-chart-patients'"
           :chart-data="patientsGraph"
           :date="Data.patients.date"
-          :unit="$t('人')"
+          :unit="'人'"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -46,7 +46,7 @@
           :chart-id="'time-stacked-bar-chart-inspections'"
           :chart-data="inspectionsGraph"
           :date="Data.inspections_summary.date"
-          :unit="$t('件')"
+          :unit="'件'"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -59,7 +59,7 @@
           :chart-id="'time-bar-chart-querents'"
           :chart-data="querentsGraph"
           :date="Data.querents.date"
-          :unit="$t('件')"
+          :unit="'件'"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "
@@ -72,7 +72,7 @@
           :chart-id="'time-bar-chart-contacts'"
           :chart-data="contactsGraph"
           :date="Data.contacts.date"
-          :unit="$t('件')"
+          :unit="'件'"
           :url="
             'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus.html'
           "

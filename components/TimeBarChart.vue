@@ -87,8 +87,10 @@ export default {
           lText: `${this.chartData.slice(-1)[0].transition.toLocaleString()}`,
           sText: `${this.$t('実績値')}（${this.$t('前日比')}：${
             this.displayTransitionRatio
-          } ${this.unit}）`,
-          unit: this.unit
+          } ${
+            this.$tc(this.unit, this.displayTransitionRatio)
+          }）`,
+          unit: this.$tc(this.unit, parseInt(this.chartData.slice(-1)[0]))
         }
       }
       return {
@@ -98,9 +100,9 @@ export default {
         sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
           '累計値'
         )}（${this.$t('前日比')}：${this.displayCumulativeRatio} ${
-          this.unit
+          this.$tc(this.unit, this.displayCumulativeRatio)
         }）`,
-        unit: this.unit
+        unit: this.$tc(this.unit, parseInt(this.chartData.slice(-1)[0]))
       }
     },
     displayData() {
@@ -139,6 +141,10 @@ export default {
     },
     displayOption() {
       const unit = this.unit
+      // 再レンダリング用に残しておく
+      const watcher = this.$t(this.unit)
+      // コールバック内では呼び出すことができないので保管
+      const ctx = this
       const scaledTicksYAxisMax = this.scaledTicksYAxisMax
       return {
         tooltips: {
@@ -146,7 +152,8 @@ export default {
           callbacks: {
             label(tooltipItem) {
               const labelText =
-                parseInt(tooltipItem.value).toLocaleString() + unit
+                parseInt(tooltipItem.value).toLocaleString() +
+                ctx.$tc(unit, parseInt(tooltipItem.value))
               return labelText
             },
             title(tooltipItem, data) {
